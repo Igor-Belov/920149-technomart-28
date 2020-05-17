@@ -7,319 +7,346 @@
 </head>
 
 <body>
+
   <header>
-    <a class="logo_header" href="index.html">
-      <img src="img/index-logo.svg" width="300" height="50" alt="Логотип Техномарта»">
-      <!--Уточнить адресс лого и размеры-->
-    </a>
-    <p>Поиск</p>
-    <!--Тут будет форма для поиска.-->
-    <div class="widget">
-      <!--По идее это секция. Но я не уверен, что 1. Есть смысл оборачивать такую мелочь 2. Можно ли и нужно ли применять section в header без особой нужды 3. И самое главное, заголовок этого блока и его иерархия-нет в нем смслового значения ни для пользователя, ни для ботов -->
 
-      <Ul>
-        <!--Списки рекомендуют использовать для НЕСКОЛЬКИХ идентичных элементов. Два это не несколько. И наверно это можно/нужно сделать на <div> или <p>, но в виде практики применю ul-->
-        <li>Закладки</li>
-        <li>Корзина</li>
-      </Ul>
+    <div class="top_header">
+      <a class="logo_header" href="index.html">
+        <img src="img/index-logo.svg" width="300" height="50" alt="Логотип Техномарта»">
+      </a>
+      <p>Поиск</p>
+      <a class="bookmarked" href="temp_plug.html">Закладки: 0</a>
+      <a class="bascet bascet_product" href="temp_plug.html">Корзина: 10</a>
+      <!--Товар нужно как то считать. пока не умею, будет просто написано как в макете.-->
+      <a class="arrange" href="temp_plug.html">Оформить заказ</a>
     </div>
-    <a href="temp_plug.html">Оформить заказ</a>
 
-    <p class="who_are_me">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-    <!--Не вижу на макете дизайнерских отступов и переносов, пока без br-->
-
-    <!-- <DIV class="header_contact"> Изначально, под этим div был <p> с телефоном и <adress> c адресом. Но оказалось что адресс работает не совсем очевидно и я его убрал из семантики. Так что теперь и div тоже не нужен стал.-->
-    <p>+7(812)555-05-55<br>
-      г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-    <!--хотел обернуть адресс в <adress>, но обнаружил, что adress не может быть ни в <p>, ни в <dir>. Почему они его сделали таким???? И как им вообще тогда адектватно пользоваться???-->
-
-    <!-- </DIV> -->
-    <div class="enter">
-      <ul>
-        <li><a href="temp_plug.html">Войти</a></li>
-        <li><a href="temp_plug.html">Регистрация</a></li>
-      </ul>
+    <div class=center_header>
+      <h1><i>Интернет-магазин строительных материалов и инструментов для ремонта</i></h1>
+      <div class="contact_header">
+        <!--А может <p>?-->
+        <a class="tel" href="tel:+78125550555">+7(812)555-05-55</a>
+        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      </div>
+      <div class="person">
+        <a href="temp_plug.html">
+          <img src="person.jpg" width="10" height="10" alt="аватар пользователя">
+          <p>Равшан Джамшутович</p>
+        </a>
+        <a href="temp_plug.html">Иконка двери
+        </a>
+        <ul>
+          <li><a href="temp_plug.html">Мои заказы</a></li>
+          <li><a href="temp_plug.html">Личный кабинет</a></li>
+        </ul>
+      </div>
     </div>
-    <NAV>
 
+    <nav>
       <ul>
         <li><a href="index.html">Главая</a></li>
-        <!--ставить просто заглушку тут считаю не очень верным (заглушка есть в логотипе на этой странице), перезагружать страницу бессмысленным, а сбросить на начало вроде самое то. Уточню у дизайнера. -->
         <li><a href="temp_plug.html">Компания</a></li>
-        <li><a href="#">Каталог</a></li>
+        <li><a>Каталог</a></li>
         <li><a href="temp_plug.html">Новости</a></li>
         <li><a href="temp_plug.html">Спецпредложения</a></li>
         <li><a href="temp_plug.html">Доставка</a></li>
-        <!--В  main есть блоки о доставке, контакты, и т.д. но скорее всего ссылки будут вести на отдельные страницы, уточню у дизайнера-->
         <li><a href="temp_plug.html">Контакты</a></li>
       </ul>
-    </NAV>
+    </nav>
   </header>
 
   <main>
 
-    <h1>Перфораторы</h1><!--Он стоит ниже, но с точки зрения семантики вроде необходимо так.-->
-
-    <section class="breadcrumbs"><!--В обучении почему то хлебные крошки не вставили в блок, оставив их просто списком. Но он же все равно будет в каком то блоке с классом для управления. Почему бы это не сделать сейчас? Тем более что мы помещаем его во вполне смысловой блок-->
-    <h2>breadcrumbs</h2><!--Спрятать-->
-      <ul>
-      <li>
-        <a href="index.html">!иконка домика!</a>
-      </li>
-      <li>
-        <a href="catalog.html">КАТАЛОГ</a>
-      </li>
-      <li>
-        <a href="temp_plug.html">ИНСТРУМЕНТ</a><!--Не лучше ли использовать множественное число? Тем более что дальше "перфораторы" во множественном числе. Эээ! Тимлид!!!!-->
-      </li>
-      <li>
-        <a>ПЕРФОРАТОРЫ</a>
-      </li>
-    </ul>
-  </section>
-
-
-<section class="filtr">
-  <h2>розовый прямоугольник для ценового фильтра и другие фильтры</h2> <!-- Здесь будет форма фильтра по цене. -->
-
-  <section class="price">
-<h3>ЦЕНА</h3>
-<p>Контент розового прямоугольника</p>
-</section>
-
-<section class="brend">
-<h3>ПРОИЗВОДИТЕЛИ</h3>
-  <ul>
-    <li>bocsh</li>
-    <li>интерскол</li>
-    <li>makita</li>
-    <li>dewalt</li>
-    <li>hitachi</li>
-  </ul>
-</section>
-
-<section>
-  <h3>ПИТАНИЕ</h3>
-  <ul>
-    <li>АККУМУЛЯТОРНЫЕ</li>
-    <li>СЕТЕВЫЕ</li>
-  </ul>
-</section>
-
-<button>ПОКАЗАТЬ</button>
-
-</section>
-
-<section class="sort">
-<h2>СОРТИРОВКА</h2>
-<p>розовая полоска</p>
-</section>
-
-<section>
-<h2>КАТАЛОГ</h2> <!--скрыть-->
-  <ul>
-
-    <li>
-      <article class="usual">
-      <a href="temp_plug.html">
-        <h3>Перфоратор BOCSH<br>BFG 3000</h3>
-          <img src="img/BOCSH_BFG_3000.jpg" width="220" height="165" alt="Перфоратор BOCSH BFG 3000">
-        <p class="old price">
-22500 Р.
-        </p>
-        </a>
-        <button type="button">15500 Р. </button>
-
-    </article>
-    </li>
-
-    <li>
-      <article class="usual">
-      <a href="temp_plug.html">
-        <h3>Перфоратор BOCSH<br>BFG 6000</h3>
-          <img src="img/BOCSH_BFG_6000.jpg" width="220" height="165" alt="Перфоратор BOCSH BFG 6000">
-        <p class="old price">
-30500 Р.
-        </p>
-        </a>
-        <button type="button">25500 Р. </button>
-
-    </article>
-    </li>
-
-    <li><!--В этой блоке, очевидно после нажатие на кнопку с ценой, произошла замена картинки товара на блок с двумя кнопками, не представляю пока как это разметить -->
-      <article class="new">
-      <a href="temp_plug.html">
-        <h3>Перфоратор BOCSH<br>BFG 2000</h3>
-          <img src="img/BOCSH_BFG_2000.jpg" width="220" height="165" alt="Перфоратор BOCSH BFG 2000">
-        <p class="old price">
-<br>
-        </p>
-        </a>
-        <button type="button"> </button>
-
-    </article>
-    </li>
-
-    <li>
-      <article class="usual">
-      <a href="temp_plug.html">
-        <h3>Перфоратор BOCSH<br>BFG 3000</h3>
-          <img src="img/BOCSH_BFG_3000.jpg" width="220" height="165" alt="Перфоратор BOCSH BFG 3000">
-        <p class="old price">
-22500 Р.
-        </p>
-        </a>
-        <button type="button">15500 Р. </button>
-
-    </article>
-    </li>
-
-    <li>
-      <article class="new">
-      <a href="temp_plug.html">
-        <h3>Перфоратор BOCSH<br>BFG 6000</h3>
-          <img src="img/BOCSH_BFG_6000.jpg" width="220" height="165" alt="Перфоратор BOCSH BFG 6000">
-        <p class="old price">
-30500 Р.
-        </p>
-        </a>
-        <button type="button">25500 Р. </button>
-
-    </article>
-    </li>
-
-    <li>
-      <article class="usual">
-      <a href="temp_plug.html">
-        <h3>Перфоратор BOCSH<br>BFG 2000</h3>
-          <img src="img/BOCSH_BFG_2000.jpg" width="220" height="165" alt="Перфоратор BOCSH BFG 2000">
-        <p class="old price">
-          <br>
-        </p>
-        </a>
-        <button type="button">12500 Р. </button>
-
-    </article>
-    </li>
-
-    <li>
-      <article class="new">
-      <a href="temp_plug.html">
-        <h3>Перфоратор BOCSH<br>BFG 3000</h3>
-          <img src="img/BOCSH_BFG_3000.jpg" width="220" height="165" alt="Перфоратор BOCSH BFG 3000">
-        <p class="old price">
-22500 Р.
-        </p>
-        </a>
-        <button type="button">15500 Р. </button>
-
-    </article>
-    </li>
-
-    <li>
-      <article class="usual">
-      <a href="temp_plug.html">
-        <h3>Перфоратор BOCSH<br>BFG 6000</h3>
-          <img src="img/BOCSH_BFG_6000.jpg" width="220" height="165" alt="Перфоратор BOCSH BFG 6000">
-        <p class="old price">
-30500 Р.
-        </p>
-        </a>
-        <button type="button">25500 Р. </button>
-
-    </article>
-    </li>
-
-    <li>
-      <article class="usual">
-      <a href="temp_plug.html">
-        <h3>Перфоратор BOCSH<br>BFG 2000</h3>
-          <img src="img/BOCSH_BFG_2000.jpg" width="220" height="165" alt="Перфоратор BOCSH BFG 2000">
-        <p class="old price">
-          <br>
-        </p>
-        </a>
-        <button type="button">12500 Р.</button>
-
-    </article>
-    </li>
-
-  </ul>
-</section>
-
-<section class="pagination">
-<h2>Нумерация страниц</h2><!--Скрыть-->
-<ul>
-  <li>
-    <a>1</a>
-  </li>
-  <li>
-    <a href="temp_plug.html" >2</a>
-  </li>
-  <li>
-    <a href="temp_plug.html">3</a>
-  </li>
-   <li>
-    <a href="temp_plug.html">СЛЕДУЮЩАЯ</a>
-  </li>
-</ul>
-</section>
-<article>
-<h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
-<p>Розовый прямоугольник</p>
-</article>
-
-
-  </main>
-
-  <footer>
-    <a class="logo_footer" href="index.html">
-      <img src="img/index-logo.svg" width="300" height="50" alt="Логотип Техномарта»">
-      <!--Уточнить адресс лого и размеры-->
-    </a>
-
-    <section>
-      <!--А вот footer пожалуй можно и section пройти. <Блоки побольше и сгрупированы по смыслу и названия их будут для пользователя полезны -->
-      <h2>Навигация из футера</h2>
+    <h1>Перфораторы</h1>
+    <section class="breadcrumbs">
+      <h2>breadcrumbs</h2>
       <!--Спрятать-->
       <ul>
-        <!--в этой навигации нет перехода на главную, и со страници каталога нет. Скорее всего ошибка-доложу тимлиду, может конфету даст.-->
-        <li><a href="temp_plug.html">Компания</a></li>
-        <li><a href="temp_plug.html">Новости</a></li>
-        <li><a href="#">Каталог</a></li>
-        <li><a href="temp_plug.html">Доставка</a></li>
-        <!--В  main есть блоки о доставке и контакты, но скорее всего ссылки будут вести на отдельные страницы, уточню у дизайнера-->
-        <li><a href="temp_plug.html">Контакты</a></li>
+        <li>
+          <a href="index.html">иконка домика</a>
+        </li>
+        <li>
+          <a href="catalog.html">Каталог</a>
+        </li>
+        <li>
+          <a href="temp_plug.html">Инструмент</a>
+        </li>
+        <li>
+          <a>Перфораторы</a>
+        </li>
       </ul>
+    </section>
 
-      <!-- <section class="footer_contact">
-          Вообще тут и div тоже хороше бы смотрелся наверное? Но для единообразия сделаю section. А вообще самое верное, что бы сущности не плодить, просто класс <p> назначить и все, верно? P.S. Удали <adress>-смысла в секции теперь совсем нет.
-          <h2>Адресс в футере</h2>
-              Скрыть позже -->
+
+    <section class="filter">
+      <h2>Тут будет форма фильтра</h2>
+      <section class="price">
+        <h3>ЦЕНА</h3>
+        <p>Контент розового прямоугольника</p>
+      </section>
+      <section class="brend">
+        <h3>ПРОИЗВОДИТЕЛИ</h3>
+        <ul>
+          <li>bocsh</li>
+          <li>интерскол</li>
+          <li>makita</li>
+          <li>dewalt</li>
+          <li>hitachi</li>
+        </ul>
+      </section>
+      <section class="Power_supply">
+        <h3>ПИТАНИЕ</h3>
+        <ul>
+          <li>АККУМУЛЯТОРНЫЕ</li>
+          <li>СЕТЕВЫЕ</li>
+        </ul>
+      </section>
+      <button>ПОКАЗАТЬ</button>
+    </section>
+
+    <section class="sort">
+      <h2>СОРТИРОВКА</h2>
+      <p>Тут будет сортировка</p>
+    </section>
+
+    <section>
+      <h2>КАТАЛОГ</h2>
+      <!--скрыть-->
+      <ul>
+
+        <li class=old>
+          <a href="temp_plug.html">
+            <h3>Перфоратор BOCSH<br>BFG 3000</h3>
+            <img src="img/BOCSH_BFG_3000.jpg" width="220" height="165" alt="Перфоратор BOCSH BFG 3000">
+            <p class="old_price">
+              22500 Р.
+            </p>
+            <p class="new_price">
+              15500 Р.
+            </p>
+          </a>
+          <div>
+            <ul>
+              <li><a class="botton_buy" href="temp_plug.html"></a>Купить</li>
+              <li><a class="botton_bookmark" href="temp_plug.html"></a>В закладки</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class=old>
+          <a href="temp_plug.html">
+            <h3>Перфоратор BOCSH<br>BFG 6000</h3>
+            <img src="img/BOCSH_BFG_6000.jpg" width="220" height="165" alt="Перфоратор BOCSH BFG 6000">
+            <p class="old_price">
+              30500 Р.
+            </p>
+            <p class="new_price">
+              22500 Р.
+            </p>
+          </a>
+          <div>
+            <ul>
+              <li><a class="botton_buy" href="temp_plug.html"></a>Купить</li>
+              <li><a class="botton_bookmark" href="temp_plug.html"></a>В закладки</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class=new>
+          <a href="temp_plug.html">
+            <h3>Перфоратор BOCSH<br>BFG 6000</h3>
+            <img src="img/BOCSH_BFG_6000.jpg" width="220" height="165" alt="Перфоратор BOCSH BFG 6000">
+            <p class="old_price">
+
+            </p>
+            <p class="new_price">
+              12500 Р.
+            </p>
+          </a>
+          <div>
+            <ul>
+              <li><a class="botton_buy" href="temp_plug.html"></a>Купить</li>
+              <li><a class="botton_bookmark" href="temp_plug.html"></a>В закладки</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class=old>
+          <a href="temp_plug.html">
+            <h3>Перфоратор BOCSH<br>BFG 3000</h3>
+            <img src="img/BOCSH_BFG_3000.jpg" width="220" height="165" alt="Перфоратор BOCSH BFG 3000">
+            <p class="old_price">
+              22500 Р.
+            </p>
+            <p class="new_price">
+              15500 Р.
+            </p>
+          </a>
+          <div>
+            <ul>
+              <li><a class="botton_buy" href="temp_plug.html"></a>Купить</li>
+              <li><a class="botton_bookmark" href="temp_plug.html"></a>В закладки</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class=new>
+          <a href="temp_plug.html">
+            <h3>Перфоратор BOCSH<br>BFG 6000</h3>
+            <img src="img/BOCSH_BFG_6000.jpg" width="220" height="165" alt="Перфоратор BOCSH BFG 6000">
+            <p class="old_price">
+              30500 Р.
+            </p>
+            <p class="new_price">
+              22500 Р.
+            </p>
+          </a>
+          <div>
+            <ul>
+              <li><a class="botton_buy" href="temp_plug.html"></a>Купить</li>
+              <li><a class="botton_bookmark" href="temp_plug.html"></a>В закладки</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class=old>
+          <a href="temp_plug.html">
+            <h3>Перфоратор BOCSH<br>BFG 6000</h3>
+            <img src="img/BOCSH_BFG_6000.jpg" width="220" height="165" alt="Перфоратор BOCSH BFG 6000">
+            <p class="old_price">
+
+            </p>
+            <p class="new_price">
+              12500 Р.
+            </p>
+          </a>
+          <div>
+            <ul>
+              <li><a class="botton_buy" href="temp_plug.html"></a>Купить</li>
+              <li><a class="botton_bookmark" href="temp_plug.html"></a>В закладки</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class=new>
+          <a href="temp_plug.html">
+            <h3>Перфоратор BOCSH<br>BFG 3000</h3>
+            <img src="img/BOCSH_BFG_3000.jpg" width="220" height="165" alt="Перфоратор BOCSH BFG 3000">
+            <p class="old_price">
+              22500 Р.
+            </p>
+            <p class="new_price">
+              15500 Р.
+            </p>
+          </a>
+          <div>
+            <ul>
+              <li><a class="botton_buy" href="temp_plug.html"></a>Купить</li>
+              <li><a class="botton_bookmark" href="temp_plug.html"></a>В закладки</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class=old>
+          <a href="temp_plug.html">
+            <h3>Перфоратор BOCSH<br>BFG 6000</h3>
+            <img src="img/BOCSH_BFG_6000.jpg" width="220" height="165" alt="Перфоратор BOCSH BFG 6000">
+            <p class="old_price">
+              30500 Р.
+            </p>
+            <p class="new_price">
+              22500 Р.
+            </p>
+          </a>
+          <div>
+            <ul>
+              <li><a class="botton_buy" href="temp_plug.html"></a>Купить</li>
+              <li><a class="botton_bookmark" href="temp_plug.html"></a>В закладки</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class=old>
+          <a href="temp_plug.html">
+            <h3>Перфоратор BOCSH<br>BFG 6000</h3>
+            <img src="img/BOCSH_BFG_6000.jpg" width="220" height="165" alt="Перфоратор BOCSH BFG 6000">
+            <p class="old_price">
+
+            </p>
+            <p class="new_price">
+              12500 Р.
+            </p>
+          </a>
+          <div>
+            <ul>
+              <li><a class="botton_buy" href="temp_plug.html"></a>Купить</li>
+              <li><a class="botton_bookmark" href="temp_plug.html"></a>В закладки</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="pagination">
+      <h2>Нумерация страниц</h2>
+      <!--Скрыть-->
+      <ul>
+        <li>
+          <a>1</a>
+        </li>
+        <li>
+          <a href="#">2</a>
+        </li>
+        <li>
+          <a href="#">3</a>
+        </li>
+        <li>
+          <a href="#">СЛЕДУЮЩАЯ</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <aside>
+    <h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
+    <p>Здесь будет общая, дополнительная информация о перфораторах</p>
+  </aside>
+
+  <footer>
+    <div class="top_fotter">
+      <a class="logo_footer" href="index.html">
+        <img src="img/index-logo.svg" width="300" height="50" alt="Логотип Техномарта»">
+      </a>
+      <section class="nav_footer">
+        <h2>Навигация из футера</h2>
+        <!--Спрятать-->
+        <ul>
+          <li><a href="temp_plug.html">Компания</a></li>
+          <li><a href="temp_plug.html">Новости</a></li>
+          <li><a href="#">Каталог</a></li>
+          <li><a href="temp_plug.html">Доставка</a></li>
+          <li><a href="temp_plug.html">Контакты</a></li>
+        </ul>
+      </section>
       <p class="adress_footer">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
         +7(812)555-05-55
       </p>
-    </section>
+      <section class="trade">
+        <h2>Торговля из футера</h2>
+        <!--Скрыть-->
+        <ul>
+          <li><a href="temp_plug.html">Материалы</a></li>
+          <li><a href="temp_plug.html">Техника</a></li>
+          <li><a href="temp_plug.html">Инструменты</a></li>
+          <li><a href="temp_plug.html">Спецпредложения</a></li>
+        </ul>
+      </section>
+    </div>
 
-    <section class="trade">
-      <h2> Торговля из футера</h2>
-      <!--Скрыть-->
-      <ul>
-        <li><a href="temp_plug.html">Материалы</a></li>
-        <li><a href="temp_plug.html">Техника</a></li>
-        <li><a href="temp_plug.html">Инструменты</a></li>
-        <li><a href="temp_plug.html">Спецпредложения</a></li>
-      </ul>
-    </section>
-
-    <p class="copyright">&#169; 2010-2017 Компания "Техномарт"<br>
-      Все права защищены</p>
-
-    <section class="outdoor">
-      <h2>Мы в соцсетях</h2>
-      <!--Скрыть-->
-      <ul>
+    <div class="botton_footer">
+      <p class="copyright">&#169; 2010-2017 Компания "Техномарт"<br>
+        Все права защищены</p>
+      <ul class="social">
         <li>
           <a href="#">Вконтакте</a>
         </li>
@@ -330,11 +357,11 @@
           <a href="#">Инстаграм</a>
         </li>
       </ul>
-    </section>
-    <p class="feedback">Обратная связь:<br>
-      <a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-    <p class="made">Разработано-<br>
-      <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+      <p class="feedback">Обратная связь:<br>
+        <a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+      <p class="made">Разработано-<br>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+    </div>
   </footer>
 </body>
 
