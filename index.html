@@ -10,9 +10,12 @@
   <header class="header_site">
     <div class="top_header_site">
       <a class="logo_header_site">
-        <img src="img/logo-technomart-header.svg" width="220" height="47" alt="Логотип Техномарта»">
+        <img src="img/logo-technomart-header-text.svg" width="108" height="18" alt="Логотип Техномарта»">
       </a>
-      <p>Поиск</p>
+      <form action="https://echo.htmlacademy.ru/" method="GET">
+        <input type="search" name="search" placeholder="Поиск">
+        <input type="submit" value="Поиск">
+      </form>
       <div class="trade_header_site">
         <a class="bookmarked" href="#">Закладки: 0</a>
         <a class="bascet" href="#">Корзина: 0</a>
@@ -47,8 +50,7 @@
 
   <main>
     <section class="promo">
-      <h2>Промо материалы</h2>
-      <!--Скрыть-->
+      <h2 class="visually-hidden">Промо материалы</h2>
       <div class=rigt_column_promo>
         <section class="tile">
           <h3>Материалы</h3>
@@ -61,11 +63,11 @@
         <div class="slider_promo">
           <div class="management_slider_promo">
             <div class="management_slider_promo_arrows">
-              <button>left</button>
-              <button>right</button></div>
+              <button type="button">left</button>
+              <button type="button">right</button></div>
             <div class="management_slider_promo_round">
-              <button>round1</button>
-              <button>round2</button>
+              <button type="button">round1</button>
+              <button type="button">round2</button>
             </div>
           </div>
           <div class="slide_promo">
@@ -105,79 +107,87 @@
         <a class="red_button" href="catalog.html">Все популярные товары</a>
       </div>
       <ul class="popular_products">
-        <li class="product">
-          <a href="#">
-            <h3>Перфоратор BOCSH<br>BFG 9000</h3>
-            <img src="img/snippet-32961.png" width="184" height="164" alt="Перфоратор BOCSH BFG 9000">
-            <p class="old_price">
-              32500 Р.
-            </p>
-            <p class="new_price">
-              25500 Р.
-            </p>
-          </a>
-          <div class="second_layer">
-            <ul class="botton_second_layer">
-              <li><a class="botton_buy" href="#"></a>Купить</li>
-              <li><a class="botton_bookmark" href="#"></a>В закладки</li>
-            </ul>
-          </div>
+        <li class="item_product">
+          <article class="product">
+            <a href="#">
+              <h3>Перфоратор BOCSH<br>BFG 9000</h3>
+              <img src="img/snippet-32961.png" width="184" height="164" alt="Перфоратор BOCSH BFG 9000">
+              <p class="old_price">
+                32500 Р.
+              </p>
+              <p class="new_price">
+                25500 Р.
+              </p>
+            </a>
+            <div class="second_layer">
+              <ul class="botton_second_layer">
+                <li><a class="botton_buy" href="#">Купить</a></li>
+                <li><a class="botton_bookmark" href="#">В закладки</a></li>
+              </ul>
+            </div>
+          </article>
         </li>
 
-        <li class="product new">
-          <a href="#">
-            <h3>Перфоратор BOCSH<br>BFG 3000</h3>
-            <img src="img/snippet-18927.png" width="127" height="112" alt="Перфоратор BOCSH BFG 3000">
-            <p class="old_price">
-              22500 Р.
-            </p>
-            <p class="new_price">
-              15500 Р.
-            </p>
-          </a>
-          <div class="second_layer">
-            <ul class="botton_second_layer">
-              <li><a class="botton_buy" href="#"></a>Купить</li>
-              <li><a class="botton_bookmark" href="#"></a>В закладки</li>
-            </ul>
-          </div>
+        <li class="item_product">
+          <article class="product new">
+            <a href="#">
+              <h3>Перфоратор BOCSH<br>BFG 3000</h3>
+              <img src="img/snippet-18927.png" width="127" height="112" alt="Перфоратор BOCSH BFG 3000">
+              <p class="old_price">
+                22500 Р.
+              </p>
+              <p class="new_price">
+                15500 Р.
+              </p>
+            </a>
+            <div class="second_layer">
+              <ul class="botton_second_layer">
+                <li><a class="botton_buy" href="#">Купить</a></li>
+                <li><a class="botton_bookmark" href="#">В закладки</a></li>
+              </ul>
+            </div>
+          </article>
         </li>
 
-        <li class="product">
-          <a href="#">
-            <h3>Перфоратор BOCSH<br>BFG 6000</h3>
-            <img src="img/snippet-945.png" width="144" height="128" alt="Перфоратор BOCSH BFG 6000">
-            <p class="old_price">
-              30500 Р.
-            </p>
-            <p class="new_price">
-              22500 Р.
-            </p>
-          </a>
-          <div class="second_layer">
-            <ul class="botton_second_layer">
-              <li><a class="botton_buy" href="#"></a>Купить</li>
-              <li><a class="botton_bookmark" href="#"></a>В закладки</li>
-            </ul>
-          </div>
+        <li class="item_product">
+          <article class="product">
+            <a href="#">
+              <h3>Перфоратор BOCSH<br>BFG 6000</h3>
+              <img src="img/snippet-945.png" width="144" height="128" alt="Перфоратор BOCSH BFG 6000">
+              <p class="old_price">
+                30500 Р.
+              </p>
+              <p class="new_price">
+                22500 Р.
+              </p>
+            </a>
+            <div class="second_layer">
+              <ul class="botton_second_layer">
+                <li><a class="botton_buy" href="#">Купить</a></li>
+                <li><a class="botton_bookmark" href="#">В закладки</a></li>
+              </ul>
+            </div>
+          </article>
         </li>
 
-        <li class="product">
-          <a href="#">
-            <h3>Перфоратор BOCSH<br>BFG 2000</h3>
-            <img src="img/snippet-18927.png" width="127" height="112" alt="Перфоратор BOCSH BFG 2000">
-            <p class="old_price">
-            </p>
-            <p class="new_price">
-              12500 Р.
-            </p>
-          </a>
-          <div class="second_layer">
-            <ul class="botton_second_layer">
-              <li><a class="botton_buy" href="#"></a>Купить</li>
-              <li><a class="botton_bookmark" href="#"></a>В закладки</li>
-            </ul>
-          </div>
+        <li class="item_product">
+          <article class="product">
+            <a href="#">
+              <h3>Перфоратор BOCSH<br>BFG 2000</h3>
+              <img src="img/snippet-18927.png" width="127" height="112" alt="Перфоратор BOCSH BFG 2000">
+              <p class="old_price">
+              </p>
+              <p class="new_price">
+                12500 Р.
+              </p>
+            </a>
+            <div class="second_layer">
+              <ul class="botton_second_layer">
+                <li><a class="botton_buy" href="#">Купить</a></li>
+                <li><a class="botton_bookmark" href="#">В закладки</a></li>
+              </ul>
+            </div>
+          </article>
         </li>
       </ul>
     </section>
@@ -245,9 +255,9 @@
       </p>
       <div class="service_slider">
         <ul class="buttons_slider_service">
-          <li class="button_slider_service"><button>Доставка</button></li>
-          <li class="button_slider_service"><button>Гарантия</button></li>
-          <li class="button_slider_service"><button>Кредит</button></li>
+          <li class="button_slider_service"><button type="button">Доставка</button></li>
+          <li class="button_slider_service"><button type="button">Гарантия</button></li>
+          <li class="button_slider_service"><button type="button">Кредит</button></li>
         </ul>
         <ul class="slides_service">
           <li class="slide_service">
@@ -304,11 +314,10 @@
   <footer class="footer_site">
     <div class="top_footer_site">
       <a class="logo_footer_site">
-        <img src="img/logo-technomart-footer.svg" width="220" height="68" alt="Логотип Техномарта»">
+        <img src="img/logo-technomart-footer-text.svg" width="138" height="23" alt="Логотип Техномарта»">
       </a>
       <section class="nav_footer_site">
-        <h2>Навигация из футера</h2>
-        <!--Спрятать-->
+        <h2 class="visually-hidden">Навигация из футера</h2>
         <ul>
           <li><a href="#">Компания</a></li>
           <li><a href="#">Новости</a></li>
@@ -321,8 +330,7 @@
         +7(812)555-05-55
       </p>
       <section class="trade_footer_site">
-        <h2>Торговля из футера</h2>
-        <!--Скрыть-->
+        <h2 class="visually-hidden">Торговля из футера</h2>
         <ul>
           <li><a href="#">Материалы</a></li>
           <li><a href="#">Техника</a></li>
@@ -353,20 +361,25 @@
     </div>
   </footer>
 
-  <!--<section class=write_us>
-    <h2>Напишите нам</h2>
-
-    <p>Ваше имя</p>
-    <span></span>
-    <p>Ваш e-mail:</p>
-    <span></span>
-    <p>Текст письма:</p>
-    <span></span>
-    <button>Закрыть</button>
-    <button>Оформить заказ</button>
-
+  <section class=write_us>
+    <h2 class="visually-hidden">Напишите нам</h2>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <p><label>Ваше имя:
+          <input type="text" name="name" placeholder="Имя Фамилия" required></label></p>
+      <p><label>Ваш e-mail:
+          <input type="email" name="email" placeholder="email@example.com" required></label></p>
+      <p><label>Текст письма:
+          <textarea name="textarea">В свободной форме</textarea></label></p>
+      <button type="submit">Оформить заказ</button>
+    </form>
+    <button type="button">Закрыть</button>
   </section>
--->
+
+  <section class="popup_map">
+    <h2 class="visually-hidden">Карта из всплывающего окна</h2>
+    <p><img src="img/BigMap.png" width="400" height="200" alt="большая карта расположения магазина"></p>
+    <button type="button">Закрыть</button>
+  </section>
 
 </body>
 

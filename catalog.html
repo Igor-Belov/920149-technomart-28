@@ -10,9 +10,12 @@
   <header class="header_site">
     <div class="top_header_site">
       <a class="logo_header" href="index.html">
-        <img src="img/logo-technomart-header.svg" width="220" height="47" alt="Логотип Техномарта»">
+        <img src="img/logo-technomart-header-text.svg" width="108" height="18" alt="Логотип Техномарта»">
       </a>
-      <p>Поиск</p>
+      <form action="https://echo.htmlacademy.ru/" method="GET">
+        <input type="search" name="search" placeholder="Поиск">
+        <input type="submit" value="Поиск">
+      </form>
       <div class="trade_header_site">
         <a class="bookmarked" href="#">Закладки: 0</a>
         <a class="bascet bascet_product" href="#">Корзина: 10</a>
@@ -56,8 +59,7 @@
   <main>
     <h1>Перфораторы</h1>
     <section class="breadcrumbs">
-      <h2>breadcrumbs</h2>
-      <!--Спрятать-->
+      <h2 class="visually-hidden">breadcrumbs</h2>
       <ul>
         <li>
           <a href="index.html">На главную</a>
@@ -76,28 +78,34 @@
 
     <section class="filter">
       <h2>Фильтр</h2>
-      <section class="price">
-        <h3>ЦЕНА</h3>
-        <p>форма фильтра</p>
-      </section>
-      <section class="brend">
-        <h3>ПРОИЗВОДИТЕЛИ</h3>
-        <ul>
-          <li>bocsh</li>
-          <li>интерскол</li>
-          <li>makita</li>
-          <li>dewalt</li>
-          <li>hitachi</li>
-        </ul>
-      </section>
-      <section class="Power_supply">
-        <h3>ПИТАНИЕ</h3>
-        <ul>
-          <li>АККУМУЛЯТОРНЫЕ</li>
-          <li>СЕТЕВЫЕ</li>
-        </ul>
-      </section>
-      <button>ПОКАЗАТЬ</button>
+      <form action="https://echo.htmlacademy.ru/" method="GET">
+        <fieldset class="price">
+          <legend>ЦЕНА</legend>
+          <span>Полоска фильтра</span>
+          <!--Все явно не так. Это точно работает не на input <input type="number" name="min_price" min="0">
+        <input type="number" name="max_price" >-->
+        </fieldset>
+
+        <fieldset class="brend">
+          <legend>ПРОИЗВОДИТЕЛИ</legend>
+          <ul>
+            <li><label><input type="checkbox" name="bocsh" checked>bocsh</label></li>
+            <li><label><input type="checkbox" name="interskol">интерскол</label></li>
+            <li><label><input type="checkbox" name="makita" checked>makita</label></li>
+            <li><label><input type="checkbox" name="dewalt">dewalt</label></li>
+            <li><label><input type="checkbox" name="hitachi">hitachi</label></li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="Power_supply">
+          <legend>ПИТАНИЕ</legend>
+          <ul>
+            <li><label><input type="radio" name="Power_supply" value="ACC">АККУМУЛЯТОРНЫЕ</label></li>
+            <li><label><input type="radio" name="Power_supply" value="electric_network">СЕТЕВЫЕ</label></li>
+          </ul>
+        </fieldset>
+        <button type="submit">ПОКАЗАТЬ</button>
+      </form>
     </section>
 
     <section class="sort">
@@ -114,186 +122,201 @@
     </section>
 
     <section>
-      <h2>КАТАЛОГ</h2>
-      <!--скрыть-->
+      <h2 class="visually-hidden">КАТАЛОГ</h2>
       <ul class="products">
-        <li class="product">
-          <a href="#">
-            <h3>Перфоратор BOCSH<br>BFG 6000</h3>
-            <img src="img/snippet-945.png" width="144" height="128" alt="Перфоратор BOCSH BFG 6000">
-            <!--Использовал PNG. Полагаю, что разница в 20килобайт не там важна, как возможность перекрашивать все задники карточки вручную, если изменят дизайн.-->
-            <p class="old_price">
-              30500 Р.
-            </p>
-            <p class="new_price">
-              22500 Р.
-            </p>
-          </a>
-          <div class="second_layer">
-            <ul class="botton_second_layer">
-              <li><a class="botton_buy" href="#"></a>Купить</li>
-              <li><a class="botton_bookmark" href="#"></a>В закладки</li>
-            </ul>
-          </div>
+        <li class="item_product">
+          <article class="product">
+            <a href="#">
+              <h3>Перфоратор BOCSH<br>BFG 6000</h3>
+              <img src="img/snippet-945.png" width="144" height="128" alt="Перфоратор BOCSH BFG 6000">
+              <p class="old_price">
+                30500 Р.
+              </p>
+              <p class="new_price">
+                22500 Р.
+              </p>
+            </a>
+            <div class="second_layer">
+              <ul class="botton_second_layer">
+                <li><a class="botton_buy" href="#">Купить</a></li>
+                <li><a class="botton_bookmark" href="#">В закладки</a></li>
+              </ul>
+            </div>
+          </article>
         </li>
 
-        <li class="product">
-          <a href="#">
-            <h3>Перфоратор BOCSH<br>BFG 6000</h3>
-            <img src="img/snippet-945.png" width="144" height="128" alt="Перфоратор BOCSH BFG 6000">
-            <p class="old_price">
-              30500 Р.
-            </p>
-            <p class="new_price">
-              22500 Р.
-            </p>
-          </a>
-          <div class="second_layer">
-            <ul class="botton_second_layer">
-              <li><a class="botton_buy" href="#"></a>Купить</li>
-              <li><a class="botton_bookmark" href="#"></a>В закладки</li>
-            </ul>
-          </div>
+        <li class="item_product">
+          <article class="product">
+            <a href="#">
+              <h3>Перфоратор BOCSH<br>BFG 6000</h3>
+              <img src="img/snippet-945.png" width="144" height="128" alt="Перфоратор BOCSH BFG 6000">
+              <p class="old_price">
+                30500 Р.
+              </p>
+              <p class="new_price">
+                22500 Р.
+              </p>
+            </a>
+            <div class="second_layer">
+              <ul class="botton_second_layer">
+                <li><a class="botton_buy" href="#">Купить</a></li>
+                <li><a class="botton_bookmark" href="#">В закладки</a></li>
+              </ul>
+            </div>
+          </article>
         </li>
 
-        <li class="product new">
-          <a href="#">
-            <h3>Перфоратор BOCSH<br>BFG 6000</h3>
-            <img src="img/snippet-945.png" width="144" height="128" alt="Перфоратор BOCSH BFG 6000">
-            <p class="old_price">
-              30500
-            </p>
-            <p class="new_price">
-              25500 Р.
-            </p>
-          </a>
-          <div class="second_layer">
-            <ul class="botton_second_layer">
-              <li><a class="botton_buy" href="#"></a>Купить</li>
-              <li><a class="botton_bookmark" href="#"></a>В закладки</li>
-            </ul>
-          </div>
+        <li class="item_product">
+          <article class="product new">
+            <a href="#">
+              <h3>Перфоратор BOCSH<br>BFG 6000</h3>
+              <img src="img/snippet-945.png" width="144" height="128" alt="Перфоратор BOCSH BFG 6000">
+              <p class="old_price">
+                30500
+              </p>
+              <p class="new_price">
+                25500 Р.
+              </p>
+            </a>
+            <div class="second_layer">
+              <ul class="botton_second_layer">
+                <li><a class="botton_buy" href="#">Купить</a></li>
+                <li><a class="botton_bookmark" href="#">В закладки</a></li>
+              </ul>
+            </div>
+          </article>
         </li>
 
-        <li class="product new">
-          <a href="#">
-            <h3>Перфоратор BOCSH<br>BFG 3000</h3>
-            <img src="img/snippet-18927.png" width="127" height="112" alt="Перфоратор BOCSH BFG 3000">
-            <p class="old_price">
-              22500 Р.
-            </p>
-            <p class="new_price">
-              15500 Р.
-            </p>
-          </a>
-          <div class="second_layer">
-            <ul class="botton_second_layer">
-              <li><a class="botton_buy" href="#"></a>Купить</li>
-              <li><a class="botton_bookmark" href="#"></a>В закладки</li>
-            </ul>
-          </div>
+        <li class="item_product">
+          <article class="product new">
+            <a href="#">
+              <h3>Перфоратор BOCSH<br>BFG 3000</h3>
+              <img src="img/snippet-18927.png" width="127" height="112" alt="Перфоратор BOCSH BFG 3000">
+              <p class="old_price">
+                22500 Р.
+              </p>
+              <p class="new_price">
+                15500 Р.
+              </p>
+            </a>
+            <div class="second_layer">
+              <ul class="botton_second_layer">
+                <li><a class="botton_buy" href="#">Купить</a></li>
+                <li><a class="botton_bookmark" href="#">В закладки</a></li>
+              </ul>
+            </div>
+          </article>
         </li>
 
-        <li class="product">
-          <a href="#">
-            <h3>Перфоратор BOCSH<br>BFG 6000</h3>
-            <img src="img/snippet-945.png" width="144" height="128" alt="Перфоратор BOCSH BFG 6000">
-            <p class="old_price">
-              30500 Р.
-            </p>
-            <p class="new_price">
-              22500 Р.
-            </p>
-          </a>
-          <div class="second_layer">
-            <ul class="botton_second_layer">
-              <li><a class="botton_buy" href="#"></a>Купить</li>
-              <li><a class="botton_bookmark" href="#"></a>В закладки</li>
-            </ul>
-          </div>
+        <li class="item_product">
+          <article class="product">
+            <a href="#">
+              <h3>Перфоратор BOCSH<br>BFG 6000</h3>
+              <img src="img/snippet-945.png" width="144" height="128" alt="Перфоратор BOCSH BFG 6000">
+              <p class="old_price">
+                30500 Р.
+              </p>
+              <p class="new_price">
+                22500 Р.
+              </p>
+            </a>
+            <div class="second_layer">
+              <ul class="botton_second_layer">
+                <li><a class="botton_buy" href="#">Купить</a></li>
+                <li><a class="botton_bookmark" href="#">В закладки</a></li>
+              </ul>
+            </div>
+          </article>
         </li>
 
-        <li class="product new">
-          <a href="#">
-            <h3>Перфоратор BOCSH<br>BFG 2000</h3>
-            <img src="img/snippet-18927.png" width="127" height="112" alt="Перфоратор BOCSH BFG 2000">
-            <p class="old_price">
+        <li class="item_product">
+          <article class="product new">
+            <a href="#">
+              <h3>Перфоратор BOCSH<br>BFG 2000</h3>
+              <img src="img/snippet-18927.png" width="127" height="112" alt="Перфоратор BOCSH BFG 2000">
+              <p class="old_price">
 
-            </p>
-            <p class="new_price">
-              12500 Р.
-            </p>
-          </a>
-          <div class="second_layer">
-            <ul class="botton_second_layer">
-              <li><a class="botton_buy" href="#"></a>Купить</li>
-              <li><a class="botton_bookmark" href="#"></a>В закладки</li>
-            </ul>
-          </div>
+              </p>
+              <p class="new_price">
+                12500 Р.
+              </p>
+            </a>
+            <div class="second_layer">
+              <ul class="botton_second_layer">
+                <li><a class="botton_buy" href="#">Купить</a></li>
+                <li><a class="botton_bookmark" href="#">В закладки</a></li>
+              </ul>
+            </div>
+          </article>
         </li>
 
-        <li class="product new">
-          <a href="#">
-            <h3>Перфоратор BOCSH<br>BFG 3000</h3>
-            <img src="img/snippet-18927.png" width="127" height="112" alt="Перфоратор BOCSH BFG 3000">
-            <p class="old_price">
-              22500 Р.
-            </p>
-            <p class="new_price">
-              15500 Р.
-            </p>
-          </a>
-          <div class="second_layer">
-            <ul class="botton_second_layer">
-              <li><a class="botton_buy" href="#"></a>Купить</li>
-              <li><a class="botton_bookmark" href="#"></a>В закладки</li>
-            </ul>
-          </div>
+        <li class="item_product">
+          <article class="product new">
+            <a href="#">
+              <h3>Перфоратор BOCSH<br>BFG 3000</h3>
+              <img src="img/snippet-18927.png" width="127" height="112" alt="Перфоратор BOCSH BFG 3000">
+              <p class="old_price">
+                22500 Р.
+              </p>
+              <p class="new_price">
+                15500 Р.
+              </p>
+            </a>
+            <div class="second_layer">
+              <ul class="botton_second_layer">
+                <li><a class="botton_buy" href="#">Купить</a></li>
+                <li><a class="botton_bookmark" href="#">В закладки</a></li>
+              </ul>
+            </div>
+          </article>
         </li>
 
-        <li class="product">
-          <a href="#">
-            <h3>Перфоратор BOCSH<br>BFG 6000</h3>
-            <img src="img/snippet-945.png" width="144" height="128" alt="Перфоратор BOCSH BFG 6000">
-            <p class="old_price">
-              30500 Р.
-            </p>
-            <p class="new_price">
-              22500 Р.
-            </p>
-          </a>
-          <div class="second_layer">
-            <ul class="botton_second_layer">
-              <li><a class="botton_buy" href="#"></a>Купить</li>
-              <li><a class="botton_bookmark" href="#"></a>В закладки</li>
-            </ul>
-          </div>
+        <li class="item_product">
+          <article class="product">
+            <a href="#">
+              <h3>Перфоратор BOCSH<br>BFG 6000</h3>
+              <img src="img/snippet-945.png" width="144" height="128" alt="Перфоратор BOCSH BFG 6000">
+              <p class="old_price">
+                30500 Р.
+              </p>
+              <p class="new_price">
+                22500 Р.
+              </p>
+            </a>
+            <div class="second_layer">
+              <ul class="botton_second_layer">
+                <li><a class="botton_buy" href="#">Купить</a></li>
+                <li><a class="botton_bookmark" href="#">В закладки</a></li>
+              </ul>
+            </div>
+          </article>
         </li>
 
-        <li class="product new">
-          <a href="#">
-            <h3>Перфоратор BOCSH<br>BFG 2000</h3>
-            <img src="img/snippet-18927.png" width="127" height="112" alt="Перфоратор BOCSH BFG 2000">
-            <p class="old_price">
+        <li class="item_product">
+          <article class="product new">
+            <a href="#">
+              <h3>Перфоратор BOCSH<br>BFG 2000</h3>
+              <img src="img/snippet-18927.png" width="127" height="112" alt="Перфоратор BOCSH BFG 2000">
+              <p class="old_price">
 
-            </p>
-            <p class="new_price">
-              12500 Р.
-            </p>
-          </a>
-          <div class="second_layer">
-            <ul class="botton_second_layer">
-              <li><a class="botton_buy" href="#"></a>Купить</li>
-              <li><a class="botton_bookmark" href="#"></a>В закладки</li>
-            </ul>
-          </div>
+              </p>
+              <p class="new_price">
+                12500 Р.
+              </p>
+            </a>
+            <div class="second_layer">
+              <ul class="botton_second_layer">
+                <li><a class="botton_buy" href="#">Купить</a></li>
+                <li><a class="botton_bookmark" href="#">В закладки</a></li>
+              </ul>
+            </div>
+          </article>
         </li>
       </ul>
     </section>
 
     <section class="pagination">
-      <h2>Нумерация страниц</h2>
-      <!--Скрыть-->
+      <h2 class="visually-hidden">Нумерация страниц</h2>
       <ul>
         <li>
           <a>1</a>
@@ -311,24 +334,27 @@
     </section>
 
     <aside>
-      <h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
-      <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,
-        бетоне и камне.
-        Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
-        шуруповерта и отбойного молотка.
-        В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная
-        дрель.</p>
+      <article class="about_perforator">
+        <h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
+        <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
+          кирпиче,
+          бетоне и камне.
+          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
+          шуруповерта и отбойного молотка.
+          В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и
+          ударная
+          дрель.</p>
+      </article>
     </aside>
   </main>
 
   <footer class="footer_site">
     <div class="top_footer_site">
       <a class="logo_footer_site" href="index.html">
-        <img src="img/logo-technomart-footer.svg" width="220" height="68" alt="Логотип Техномарта»">
+        <img src="img/logo-technomart-footer-text.svg" width="138" height="23" alt="Логотип Техномарта»">
       </a>
       <section class="nav_footer_site">
-        <h2>Навигация из футера</h2>
-        <!--Спрятать-->
+        <h2 class="visually-hidden">Навигация из футера</h2>
         <ul>
           <li><a href="#">Компания</a></li>
           <li><a href="#">Новости</a></li>
@@ -341,8 +367,7 @@
         +7(812)555-05-55
       </p>
       <section class="trade_footer_site">
-        <h2>Торговля из футера</h2>
-        <!--Скрыть-->
+        <h2 class="visually-hidden">Торговля из футера</h2>
         <ul>
           <li><a href="#">Материалы</a></li>
           <li><a href="#">Техника</a></li>
@@ -373,14 +398,14 @@
     </div>
   </footer>
 
-  <!--<section class="message_buy">
+  <section class="message_buy">
     <h2>Сообщение о товаре</h2>
 
-  <p>Товар добавлен в корзину!</p>
-  <a class="red_button" href="#">Оформить заказ</a>
-  <a class="white_button" href="#">Продолжить покупки</a>
+    <p>Товар добавлен в корзину!</p>
+    <a class="red_button" href="#">Оформить заказ</a>
+    <a class="white_button" href="#">Продолжить покупки</a>
   </section>
-  -->
+  <button type="button">Закрыть</button>
 </body>
 
 </html>
