@@ -4,12 +4,14 @@
 <head>
   <meta charset="utf-8">
   <title>Техномарт</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="header_site">
     <div class="top_header_site">
-      <a class="logo_header" href="index.html">
+      <a class="logo_header_site" href="index.html">
         <img src="img/logo-technomart-header-text.svg" width="108" height="18" alt="Логотип Техномарта»">
       </a>
       <form action="https://echo.htmlacademy.ru/" method="GET">
@@ -30,12 +32,14 @@
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
       <div class="person">
-        <a href="#">
-          <img src="person.jpg" width="10" height="10" alt="аватар пользователя">
-          <p>Равшан Джамшутович</p>
-        </a>
-        <a href="#">Иконка двери
-        </a>
+        <div class=output_name_user>
+          <a class="name_user" href="#">
+            <img src="person.jpg" width="10" height="10" alt="аватар пользователя">
+            <p>Равшан Джамшутович</p>
+          </a>
+          <a href="#">Иконка двери
+          </a>
+        </div>
         <ul class="nav_person">
           <li><a href="#">Мои заказы</a></li>
           <li><a href="#">Личный кабинет</a></li>
@@ -43,8 +47,8 @@
       </div>
     </div>
 
-    <nav class="header_site">
-      <ul class="header_nav_site">
+    <nav class="bottom_header_site">
+      <ul class="nav_header_site">
         <li><a href="index.html">Главая</a></li>
         <li><a href="#">Компания</a></li>
         <li><a>Каталог</a></li>
@@ -89,11 +93,31 @@
         <fieldset class="brend">
           <legend>ПРОИЗВОДИТЕЛИ</legend>
           <ul>
-            <li><label><input type="checkbox" name="bocsh" checked>bocsh</label></li>
-            <li><label><input type="checkbox" name="interskol">интерскол</label></li>
-            <li><label><input type="checkbox" name="makita" checked>makita</label></li>
-            <li><label><input type="checkbox" name="dewalt">dewalt</label></li>
-            <li><label><input type="checkbox" name="hitachi">hitachi</label></li>
+            <li>
+              <label>
+                <input type="checkbox" name="bocsh" checked>bocsh
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="interskol">интерскол
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="makita" checked>makita
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="dewalt">dewalt
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="hitachi">hitachi
+              </label>
+            </li>
           </ul>
         </fieldset>
 
@@ -391,11 +415,10 @@
           <a href="#">Инстаграм</a>
         </li>
       </ul>
-      <p class="feedback_footer_site">Обратная связь:<br>
-        <a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-      <p class="made">Разработано-<br>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
-    </div>
+        <p class="feedback_footer_site">Обратная связь:<br>
+          <a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+        <p class="made">Разработано-<br>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
   </footer>
 
   <section class="message_buy">
