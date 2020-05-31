@@ -81,67 +81,71 @@
     </section>
 
     <section class="filter">
-      <h2>Фильтр</h2>
+      <h2 class="main-title">Фильтр</h2>
       <form action="https://echo.htmlacademy.ru/" method="GET">
         <fieldset class="price">
-          <legend>ЦЕНА</legend>
+          <legend class="section-title">ЦЕНА</legend>
           <span>Полоска фильтра</span>
           <!--Все явно не так. Это точно работает не на input <input type="number" name="min-price" min="0">
         <input type="number" name="max-price" >-->
         </fieldset>
 
         <fieldset class="brend">
-          <legend>ПРОИЗВОДИТЕЛИ</legend>
+          <legend class="section-title">ПРОИЗВОДИТЕЛИ</legend>
           <ul>
             <li>
-              <label>
-                <input type="checkbox" name="bocsh" checked>bocsh
+              <label class ="checkbox-brend checkbox-name-item">
+                <input class ="checkbox-brend" type="checkbox" name="bocsh" checked>bocsh
               </label>
             </li>
             <li>
-              <label>
-                <input type="checkbox" name="interskol">интерскол
+              <label class ="checkbox-brend checkbox-name-item">
+                <input class ="input-checkbox-brend" type="checkbox" name="interskol">интерскол
               </label>
             </li>
             <li>
-              <label>
-                <input type="checkbox" name="makita" checked>makita
+              <label class ="checkbox-brend checkbox-name-item">
+                <input class ="input-checkbox-brend" type="checkbox" name="makita" checked>makita
               </label>
             </li>
             <li>
-              <label>
-                <input type="checkbox" name="dewalt">dewalt
+              <label class ="checkbox-brend checkbox-name-item">
+                <input class ="input-checkbox-brend" type="checkbox" name="dewalt">dewalt
               </label>
             </li>
             <li>
-              <label>
-                <input type="checkbox" name="hitachi">hitachi
+              <label class ="checkbox-brend checkbox-name-item">
+                <input class ="input-checkbox-brend" type="checkbox" name="hitachi">hitachi
               </label>
             </li>
           </ul>
         </fieldset>
 
         <fieldset class="Power-supply">
-          <legend>ПИТАНИЕ</legend>
-          <ul>
-            <li><label><input type="radio" name="Power-supply" value="ACC">АККУМУЛЯТОРНЫЕ</label></li>
-            <li><label><input type="radio" name="Power-supply" value="electric-network">СЕТЕВЫЕ</label></li>
+          <legend class="section-title">ПИТАНИЕ</legend>
+          <ul class="design-text-filter">
+            <li>
+              <label class="checkbox-name-item"><input type="radio" name="Power-supply" value="ACC">АККУМУЛЯТОРНЫЕ</label>
+            </li>
+            <li>
+              <label class="checkbox-name-item"><input type="radio" name="Power-supply" value="electric-network">СЕТЕВЫЕ</label>
+            </li>
           </ul>
         </fieldset>
-        <button type="submit">ПОКАЗАТЬ</button>
+        <button class="catalog-button" type="submit">ПОКАЗАТЬ</button>
       </form>
     </section>
 
     <section class="sort">
-      <h2>СОРТИРОВКА</h2>
+      <h2 class="sort-title">СОРТИРОВКА</h2>
       <ul class="sort-sign">
-        <li><a class="button-sort" href="#">по цене</a></li>
-        <li><a class="button-sort" href="#">по типу</a></li>
-        <li><a class="button-sort" href="#">по функционалу</a></li>
+        <li><a class="button-sort-text" href="#">по цене</a></li>
+        <li><a class="button-sort-text" href="#">по типу</a></li>
+        <li><a class="button-sort-text" href="#">по функционалу</a></li>
       </ul>
       <ul class="big-small">
-        <li><a class="button-sort" href="#">по возрастанию</a></li>
-        <li><a class="button-sort" href="#">по убыванию</a></li>
+        <li><a class="button-sort-icon" href="#">по возрастанию</a></li>
+        <li><a class="button-sort-icon" href="#">по убыванию</a></li>
       </ul>
     </section>
 
@@ -149,7 +153,7 @@
       <h2 class="visually-hidden">КАТАЛОГ</h2>
       <ul class="card-products">
         <li class="item-product">
-          <article class="product">
+          <article class="card-product">
             <a href="#">
               <h3 class="title">Перфоратор BOCSH<br>BFG 6000</h3>
               <img src="img/snippet-945.png" width="144" height="128" alt="Перфоратор BOCSH BFG 6000">
@@ -343,24 +347,24 @@
       <h2 class="visually-hidden">Нумерация страниц</h2>
       <ul>
         <li>
-          <a>1</a>
+          <a class="catalog-button">1</a>
         </li>
         <li>
-          <a href="#">2</a>
+          <a class="catalog-button" href="#">2</a>
         </li>
         <li>
-          <a href="#">3</a>
+          <a class="catalog-button" href="#">3</a>
         </li>
         <li>
-          <a href="#">СЛЕДУЮЩАЯ</a>
+          <a class="catalog-button" href="#">СЛЕДУЮЩАЯ</a>
         </li>
       </ul>
     </section>
 
-    <aside>
+    <aside class="second-info">
       <article class="about-perforator">
-        <h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
-        <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
+        <h2 class="second-info-title">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
+        <p class="content">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
           кирпиче,
           бетоне и камне.
           Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
@@ -431,7 +435,7 @@
     <a class="block-button" href="#">Оформить заказ</a>
     <a class="block-button" href="#">Продолжить покупки</a>
   </section>
-  <button type="block-button">Закрыть</button>
+  <button type="button">Закрыть</button>
 </body>
 
 </html>
