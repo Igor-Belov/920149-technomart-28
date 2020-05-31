@@ -123,10 +123,10 @@ color: var(--Basic-greylight, lightgrey);
 .nav_header_site {
 background-color: var(--bottom-header-site, blue)
 }
-.nav_header_site a:hover, .nav_header_site a:focus{
+.nav_header_site a[href]:hover, .nav_header_site a[href]:focus{
 background-color: var(--top-header-site, darkblue);
 }
-.nav_header_site a:active {background-color: var(--active-nav, darkblue);
+.nav_header_site a[href]:active {background-color: var(--active-nav, darkblue);
   color: var(--active-nav-text, gray) ;
 
 }
@@ -185,6 +185,11 @@ line-height: 24px;
   color: var(--absolutely-black, black);
 }
 .button{
+font-family: var(--first-font);
+font-size: 14px;
+line-height: 18px;
+text-transform: uppercase;
+border: none;
 background-color: var(--Basic-red, red);
 }
 
@@ -199,10 +204,10 @@ background-color:var(--top-header-site);}
 line-height: 24px;
 color:var(--Basic-background, #F1F5F7);
 }
-.nav_footer_site a:hover, .nav_footer_site a:focus{
+.nav_footer_site a[href]:hover, .nav_footer_site a[href]:focus{
 text-decoration: underline;
 }
-.nav_footer_site a:active
+.nav_footer_site a[href]:active
 {color:var(--nav_footer_site_active, #C1C8D0)};
 
 .adress_footer_site{
@@ -215,7 +220,7 @@ color:var(--center-header-site, #F3F7F9);
   line-height: 24px;
  color:var(--Special-yellowlight);
 }
-.trade_footer_site a:hover, .trade_footer_site a:focus{
+.trade_footer_site a[href]:hover, .trade_footer_site a[href]:focus{
   text-decoration: underline;
   }
   .trade_footer_site a:active
