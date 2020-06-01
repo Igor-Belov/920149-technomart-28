@@ -1,50 +1,83 @@
 /* Отлючение блоков */
-.popup_map {display: none;}
-.write_us {display: none;}
-.message_buy {display: none;}
+
+.popup_map {
+  display: none;
+}
+
+.write_us {
+  display: none;
+}
+
+.message_buy {
+  display: none;
+}
 
 /* Переменные */
-:root
-{--Basic-red:#EE3643;
---Basic-green: #63A63E;
---Basic-grey: #3D546F;
---Basic-greylight: #C5C5C5;
---Basic-background: #F1F5F7;
---Wight: #FFFFFF;
---Special-ylellow: #FFBF47;
---Second-special-ylellow: #FFC047;
---Special-blue: #3BBCE3;
---Special-lilac: #DC91D8;
---Special-greenlight: #8ED78F;
---Special-yellowlight: #FFD180;
---Success: #5FBB2D;
---Warning: #FFBF47;
---Error: #BA2732;
---top-header-site: #293449;
---center-header-site: #F3F7F9;
---bottom-header-site: #32425C;
---absolutely-black: #000000;
---active-blue: #161D29;
---active-nav: rgb(4, 14, 34);
---active-nav-text: #8E939C;
---trade_header_site: rgba(255, 255, 255, 0.5);
---nav_footer_site_active: #C1C8D0;
---trade_footer_site_active: #98896E;
---main_h1: #F2F6F8;
---old_price: #A9A9A9;
 
---first-font: 'Cuprum', sans-serif;
---second_font: 'PT Sans', sans-serif;}
-
-/* Глобальные тэги */
-body {
-font-family: var(--first-font);
-min-width: 1220px;
-margin: 0px;
-padding: 0px;
-font-size: 18px;
-line-height: 24px;
+:root {
+  --basic-red: #EE3643;
+  --basic-green: #63A63E;
+  --basic-grey: #3D546F;
+  --basic-greylight: #C5C5C5;
+  --basic-background: #F1F5F7;
+  --wight: #FFFFFF;
+  --special-ylellow: #FFBF47;
+  --second-special-ylellow: #FFC047;
+  --special-blue: #3BBCE3;
+  --special-lilac: #DC91D8;
+  --special-greenlight: #8ED78F;
+  --special-yellowlight: #FFD180;
+  --success: #5FBB2D;
+  --warning: #FFBF47;
+  --error: #BA2732;
+  --text-black: #000000;
+  --dark-blue: #161D29;
+  --nav-blue: #32425C;
+  --nav-active: #1D2739;
+  --nav-shadow: #293449;
+  --border-card: #EAEAEA;
+  --backgraund-popular: #F9F5F0;
+  --buy-button-shadow: #367315;
+  --buy-button-active: #518534;
+  --old-price: #A9A9A9;
+  --title-background: #F2F6F8;
+  --filter-background: #F7F3EC;
+  --border-button-catalog: #E5E5E5;
+  --logo-shadow: rgba(0, 0, 0, 0.24);
+  --card-shadow: rgba(0, 0, 0, 0.15);
+  --tile-none: rgba(255, 255, 255, 0.3);
+  --tile-active: rgba(169, 169, 169, 0.3);
+  --tile-hover: rgba(197, 197, 197, 0.3);
+  --semi-transparent: rgba(255, 255, 255, 0.5);
+  --styly-button: rgba(0, 0, 0, 0.3);
+  --first-font: "Cuprum", Arial, sans-serif;
+  --second-font: "PT Sans", Arial, sans-serif;
 }
+
+body {
+  min-width: 1220px;
+  margin: 0;
+  padding: 0;
+  font-family: var(--first-font, Arial, sans-serif);
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--Text-black, black);
+  background-color: var(--Wight, white);
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.content-box-component {
+  box-sizing: content-box;
+}
+
 
 a {
   text-decoration: none;
@@ -56,254 +89,717 @@ img {
   height: auto;
 }
 
-li {
-list-style: none;
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
 }
 
-/* Хэдэр */
-.header_site{
-background-color: var(--center-header-site, gray);
+fieldset {
+  border: none;
 }
 
-.top_header_site {
-background-color: var(--top-header-site, blue);
-color: var(--Wight, white);
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
-a.logo_header_site
-{background-color: var(--Basic-red, red);}
+/* header */
 
-a.arrange {background-color: var(--Basic-green, green);
-margin: 0px;}
-
-a.arrange:hover, a.arrange:focus{
-background-color: var(--Success, lightgreen);
-}
-.trade_header_site a:active {color: var(--trade_header_site, gray);}
-
-a.logo_header_site:active{
-background-color: var(--Error, darkred);
+.header-site {
+  background-color: var(--basic-background, lightblue);
 }
 
-a.bookmarked:active, a.bascet:active
-{background-color: var(--active-blue, blue);
-}
-
-.center_header_site h1{
-font-size: 16px;
-line-height: 23px;
-font-style: italic;
-color: var(--Basic-red, red);
-}
-
-.contact_header_site .tel {
-color: var(--Basic-red, red);
-font-style: bold;
-font-size: 21px;
-line-height: 30px;
-}
-.contact_header_site p {
-font-size: 14px;
-line-height: 24px;}
-
-
-.entrace a {
-color:var(--absolutely-black, black);
-font-size: 21px;
-line-height: 21px;
-}
-.entrace a:hover, .entrace a:focus{
-color: var(--Basic-red, red);
-}
-.entrace a:active{
-color: var(--Basic-greylight, lightgrey);
-}
-
-
-.nav_header_site {
-background-color: var(--bottom-header-site, blue)
-}
-.nav_header_site a[href]:hover, .nav_header_site a[href]:focus{
-background-color: var(--top-header-site, darkblue);
-}
-.nav_header_site a[href]:active {background-color: var(--active-nav, darkblue);
-  color: var(--active-nav-text, gray) ;
-
-}
-
-.nav_header_site li{
-  text-align: center;}
-.nav_header_site a{
+.top-header-site {
+  background-color: var(--basic-grey, darkblue);
+  font-weight: 400;
   font-size: 18px;
-  line-height: 24px;}
+  line-height: 24px;
+  color: var(--Wight, white);
+}
 
-  /* main */
+.logo-header-site {
+  display: block;
+  width: 220px;
+  height: 47px;
+  padding: 12px 57px 17px 55px;
+  background-color: var(--basic-red, red);
+  box-shadow: inset 0px -5px 0px var(--logo-shadow, darkred);
+}
 
-.tile h3{
+.logo-header-site[href]:active {
+  background-color: var(--error, darkred);
+}
+
+.input-search {
+  font: inherit;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.input-search::-moz-placeholder {
+  color: var(--wight, white);
+}
+
+.input-search::-webkit-input-placeholder {
+  color: var(--wight, white);
+}
+
+/* переделать, когда добавлю лупу */
+
+.input-search:hover::-moz-placeholder {
+  color: var(--semi-transparent, gray);
+}
+
+.input-search:hover::-webkit-input-placeholder {
+  color: var(--semi-transparent, gray);
+}
+
+.input-search:focus {
+  background-color: var(--wight, white);
+  color: var(--text-black, black);
+}
+
+.link-bookmarked:hover, .link-bookmarked:focus, .link-bascet:hover, .link-bascet:focus {
+  /* Иконка меняет подсветку, и у поиска тоже. Но у нас пока нет икогок */
+}
+
+.link-bookmarked:active, .link-bascet:active {
+  color: var(--semi-transparent);
+  background-color: var(--dark-blue, darkblue);
+}
+
+.link-arrange {
+  background-color: var(--basic-green, lightgreen);
+}
+
+.link-arrange:focus, .link-arrange:hover {
+  background-color: var(--success, green);
+}
+
+.link-arrange:active {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: var(--basic-green, lightgreen);
+}
+
+.header-title {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--basic-red, red);
+}
+
+.contact-header-site .tel {
+  display: block;
+  width: 270px;
+  height: 45px;
+  border: 3px solid var(--basic-red, white);
+  font-family: var(--first-font, Arial, sans-serif);
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  text-align: center;
+  color: var(--basic-red, red);
+}
+
+.contact-header-site .adress {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--nav-blue, darkblue);
+}
+
+.entrace .link {
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+  color: var(--text-black, black);
+  background-color: var(--wight, white);
+}
+
+.entrace .link:hover, .entrace .link:focus {
+  color: var(--basic-red, red);
+}
+
+.entrace .link:active {
+  color: var(--basic-greylight, lightgray);
+}
+
+/* когда появятся иконки сделать их интерактивными */
+
+.output-name-user .link-name-user {
+  background-color: var(--wight, white);
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--text-black, black);
+}
+
+.output-name-user .link-name-user:active {
+  color: var(--basic-greylight, gray);
+}
+
+.nav-person .link {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--nav-blue, darkblue);
+  background-color: transparent;
+}
+
+.nav-person .link:hover, .nav-person .link:focus {
+  color: var(--basic-red, red);
+}
+
+.nav-person .link:active {
+  color: var(--basic-greylight, lightgray);
+}
+
+/* А чему тут лучше задавать фон, nav, ul, li или a? */
+
+.nav-header-site .link {
+  background-color: var(--nav-blue, blue);
+  box-shadow: inset 0px -5px 0px var(--nav-shadow, darkblue);
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.nav-header-site .link[href]:focus, .nav-header-site .link[href]:hover {
+  background-color: var(--nav-shadow);
+}
+
+.nav-header-site .link[href]:active {
+  background-color: var(--nav-active, darkblue);
+  box-shadow: inset 0px -5px 0px var(--nav-shadow, darkblue);
+  color: var(--semi-transparent, gray);
+}
+
+/* footer */
+
+.footer-site {
+  background-color: var(--nav-blue, blue);
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.logo-footer-site {
+  display: block;
+  width: 220px;
+  height: 68px;
+  padding: 21px 42px 25px 42px;
+  background-color: var(--basic-red);
+  box-shadow: inset 0px -5px 0px var(--logo-shadow, darkred);
+}
+
+.adress-footer-site {
+  color: var(--basic-background, white);
+}
+
+.nav-footer-site .link {
+  color: var(--basic-background, white);
+}
+
+.nav-footer-site .link[href]:hover, .nav-footer-site .link[href]:focus {
+  text-decoration: underline;
+}
+
+.nav-footer-site .link[href]:active {
+  text-decoration: none;
+  color: var(--semi-transparent, gray);
+}
+
+.trade-footer-site .link {
+  color: var(--special-yellowlight, lightyellow);
+}
+
+.trade-footer-site .link:hover, .trade-footer-site .link:focus {
+  text-decoration: underline;
+}
+
+/* Я понимаю, что мы договаривались не испоьзовать opacity, но тут из за уникальности цвета он очень в тему  */
+
+.trade-footer-site .link:active {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.bottom-footer-site {
+  background-color: var(--nav-shadow, darkblue);
+}
+
+.copyright-footer-site {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--wight, white);
+}
+
+/* тут будет код для интерактивный иконок соц сетей */
+
+.feedback .text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--wight, white);
+}
+
+.feedback .link {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--special-yellowlight, lightyellow);
+}
+
+.feedback .link:hover, .feedback .link:focus {
+  text-decoration: underline;
+}
+
+.feedback .link:active {
+  color: var(--basic-red);
+  text-decoration: none;
+}
+
+/* main */
+
+.info-tile .name-tile {
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
   color: var(--wight, white);
 }
-.tile a{
+
+.info-tile .button-tile {
+  font-weight: normal;
   font-size: 14px;
   line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: var(--tile-none, red);
 }
 
-.tile_1{
-  background-color: var(--Special-ylellow, yellow);
+.info-tile .button-tile:hover, .info-tile .button-tile:focus {
+  background-color: var(--tile-hover, red);
 }
 
-.tile_2{
-  background-color: var(--Special-blue, blue);
+.info-tile .button-tile:active {
+  background-color: var(--tile-active, red);
 }
 
-.tile_3{
-  background-color: var(--Special-lilac, violet);
+.tile-material {
+  background-color: var(--special-ylellow, yellow);
 }
 
-.tile_4{
-  background-color: var(--Special-greenlight,lightgreen);
+.tile-tools {
+  background-color: var(--special-blue, lightblue);
 }
 
-.tile_5{
-  background-color: var(--Second-special-ylellow, yellow);
+.tile-technics {
+  background-color: var(--special-lilac, purple);
 }
 
-.botton_main h2{
-font-size: 30px;
-line-height: 30px;
+.tile-sale {
+  background-color: var(--special-greenlight, lightgreen);
 }
-.botton_main p{
-font-family: var(--second_font);
-font-size: 13px;
-line-height: 24px;
+
+.tile-delivery {
+  background-color: var(--second-special-ylellow, yellow);
 }
-.carrier a{
+
+.slider-promo .title {
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.slider-promo .description {
+  background-color: transparent;
+  font-weight: normal;
   font-size: 18px;
   line-height: 24px;
-  color: var(--absolutely-black, black);
-}
-.button{
-font-family: var(--first-font);
-font-size: 14px;
-line-height: 18px;
-text-transform: uppercase;
-border: none;
-background-color: var(--Basic-red, red);
 }
 
-.footer_site{
-background-color: var(--bottom-header-site, blue);
-}
-.botton_footer_site{
-background-color:var(--top-header-site);}
+/* Тут еще будут стили для кнопок */
 
-.nav_footer_site a{
+.design-button {
+  font-family: var(--first-font, Arial, sans-serif);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--wight, white);
+  background-color: var(--basic-red, red);
+}
+
+.design-button:active {
+  background-color: var(--error, darkred);
+}
+
+.slide-drill {
+  background-color: var(--basic-grey, gray);
+  background-image: url("../img/slide-drill.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.slide-perforator {
+  background-color: var(--basic-grey, gray);
+  background-image: url("../img/slide-perforator.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.popular-products .top-section {
+  background-color: var(--backgraund-popular, lightgray);
+}
+
+.popular-products .top-section .title {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--nav-blue, blue);
+}
+
+.card-product {
+  background-color: var(--wight, white);
+  border: 1px solid var(--border-card);
+}
+
+.card-product:focus .card-product:hover {
+  box-shadow: 0px 4px 20px var(--card-shadow, lightgray);
+}
+
+.button-second-layer .button-buy {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--wight, white);
+  background-color: var(--basic-green);
+  box-shadow: inset 0px -3px 0px var(--buy-button-shadow, green);
+  border-radius: 2px;
+}
+
+/* добавить иконку и интерактив сней */
+
+.button-second-layer .button-buy:focus, .button-second-layer .button-buy:hover {
+  background: var(--success, lightgreen);
+}
+
+.button-second-layer .button-buy:active {
+  background-color: var(--buy-button-active, darkgreen);
+}
+
+.button-second-layer .button-bookmark {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--nav-blue, blue);
+  background-color: transparent;
+  border: 3px solid var(--basic-green, green);
+  border-radius: 2px;
+}
+
+/* добавить иконку и интерактив с ней */
+
+.button-second-layer .button-bookmark:focus, .button-second-layer .button-bookmark:hover {
+  border-color: var(--nav-blue, blue);
+}
+
+.button-second-layer .button-bookmark:active {
+  opacity: 0.5;
+}
+
+.card-product .title {
+  font-family: var(--second-font, Arial, sans-serif);
+  font-weight: bold;
   font-size: 18px;
-line-height: 24px;
-color:var(--Basic-background, #F1F5F7);
-}
-.nav_footer_site a[href]:hover, .nav_footer_site a[href]:focus{
-text-decoration: underline;
-}
-.nav_footer_site a[href]:active
-{color:var(--nav_footer_site_active, #C1C8D0)};
-
-.adress_footer_site{
-  font-size: 18px;
-line-height: 24px;
-color:var(--center-header-site, #F3F7F9);
+  line-height: 20px;
+  text-align: center;
+  color: var(--text-black, black);
 }
 
-.trade_footer_site a {font-size: 18px;
-  line-height: 24px;
- color:var(--Special-yellowlight);
-}
-.trade_footer_site a[href]:hover, .trade_footer_site a[href]:focus{
-  text-decoration: underline;
-  }
-  .trade_footer_site a:active
-  {color: var(--trade_footer_site_active, #98896E);}
-
- .copyright_footer_site{
-  font-size: 16px;
-  line-height: 18px;
-  color:var(--Wight, white);
- }
-
- .feedback_footer_site, .made{
-  font-size: 16px;
-  line-height: 18px;
-  color: var(--Wight, white);
- }
- .feedback_footer_site a, .made a{
-   font-size: 16px;
-  line-height: 18px;
-  color: var(--Special-yellowlight,#FFD180);}
-
-.output_name_user {
-  background-color: var(--Wight);}
-.output_name_user a
-{font-size: 21px;
-line-height: 21px;
-color: var(--absolutely-black, black);
-}
-
-.person a:active{
-color: var(--Basic-greylight, lightgrey);
-}
-.nav_person a:focus, .nav_person a:hover{
-color: var(--Basic-red, red);
-}
-
-.nav_person a{
-  font-size: 16px;
-  line-height: 18px;
-color: var(--bottom-header-site,#32425C);}
-
-
-.breadcrumbs a
-{font-family: var(--second_font);
-  font-size: 13px;
-  line-height: 18px;
-  color: var(--absolutely-black, black);
-}
-
-main h1 {font-size: 30px;
-line-height: 30px;
-color:var(--bottom-header-site, #32425C);
-background-color: var(--main_h1,#F2F6F8);}
-
-.feedback_footer_site a:focus, .made a:focus, .feedback_footer_site a:hover, .made a:hover
-{text-decoration: underline;
-}
-.feedback_footer_site a:active, .made a:active {
-color: var(--Basic-red);
-}
-.logo_footer_site {background-color: var(--Basic-red,red);}
-
-article.product h3 {
-font-family: var(--second_font);
-font-size: 18px;
-line-height: 20px;
-font-weight: bold;
-color: var(--absolutely-black, black);
-}
-article.product .old_price
-{font-family: var(--second_font);
+.card-product .old-price {
+  font-family: var(--second-font, Arial, sans-serif);
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
-text-decoration: line-through;
-color: var(--old_price,#A9A9A9);}
-
-article.product .new_price{
-background-color: var(--Basic-red, red);
-background-image: url("../img/Shape.jpg");
-background-repeat: no-repeat;
+  text-align: center;
+  text-decoration: line-through;
+  text-transform: uppercase;
+  color: var(--old-price, gray);
 }
-.new{
-  background-image: url("../img/new.png");
-background-repeat: no-repeat;
+
+/* я вырезал новую стрелку с фоном. Иначе я не понимаю, как сделать что бы фон не вылеза в вырезы стрелки */
+
+.card-product .new-price {
+  background-color: var(--basic-red, red);
+  background-image: url("../img/red-button-backgraund.png");
+  background-repeat: no-repeat;
+  font-family: var(--second-font, Arial, sans-serif);
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--wight, white);
+}
+
+.popular-vendors .top-section {
+  background-color: var(--backgraund-popular, lightgray);
+}
+
+.popular-vendors .top-section .title {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--nav-blue, blue);
+}
+
+.popular-vendors .vendor {
+  background: var(--wight, white);
+  border: 1px solid var(--border-card, gray);
+}
+
+.popular-vendors .vendor:focus, .popular-vendors .vendor:hover {
+  box-shadow: 0px 4px 20px var(--card-shadow, lightgray);
+}
+
+.popular-vendors .vendor:active {
+  opacity: 0.5;
+}
+
+.service {
+  background-color: var(--basic-background, lightblue);
+}
+
+.service .title {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--text-black, black);
+}
+
+.service .text {
+  font-family: var(--second-font, Arial, sans-serif);
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--text-black, black);
+}
+
+/* тут будет оформление слайдера */
+
+.service-slider {}
+
+.button-slider-service {
+  background-color: var(--nav-blue, darkblue);
+  box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  align-items: center;
+  color: var(--wight, white);
+  border: none;
+  outline: none;
+}
+
+.button-slider-service:focus, .button-slider-service:hover {
+  background-color: var(--nav-shadow, darkblue);
+}
+
+/* подсветка должна гореть пока на слайде */
+
+.button-slider-service:active {
+  background-color: var(--wight, white);
+  box-shadow: 0px 1px 0px #FFFFFF, inset 0px 1px 0px #FFFFFF;
+  color: var(--nav-blue, darkblue);
+}
+
+.slide-service .slide-title {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--nav-blue, darkblue);
+}
+
+.slide-service .text {
+  font-family: var(--second-font, Arial, sans-serif);
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--text-black, black)
+}
+
+.bottom-main .title {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--text-black, black);
+}
+
+.bottom-main .text {
+  font-family: var(--second-font, Arial, sans-serif);
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--text-black, black);
+}
+
+.bottom-main .carrier {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--text-black, black);
+}
+
+/* main catalog */
+
+.main-title {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--nav-blue, darkblue);
+  background-color: var(--title-background, lightblue);
+}
+
+.breadcrumbs {
+  font-family: var(--second-font, Arial, sans-serif);
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--text-black, black);
+  background-color: transparent;
+}
+
+.filter .main-title {
+  font-family: var(--second-font, Arial, sans-serif);
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--text-black, black);
+  background-color: var(--filter-background, gray);
+}
+
+.filter .section-title {
+  font-family: var(--second-font, Arial, sans-serif);
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--text-black, black);
+  background-color: transparent;
+}
+
+.filter .checkbox-name-item {
+  font-family: var(--second-font, Arial, sans-serif);
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: var(--text-black, black);
+  background-color: transparent;
+}
+
+.filter .checkbox-name-item:active {
+  opacity: 0.4;
+}
+
+/* прописать состояния для иконок */
+
+.catalog-button {
+  font-family: var(--second-font, Arial, sans-serif);
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--text-black, black);
+  background-color: var(--wight, white);
+  border: 1px solid var(--border-button-catalog, gray);
+  border-radius: 2px;
+  outline: none;
+}
+
+.catalog-button:focus, .catalog-button:hover {
+  border: 1px solid var(--basic-greylight, lightgray);
+  border-radius: 2px;
+}
+
+.catalog-button:active {
+  border: 1px solid var(--basic-red, red);
+  border-radius: 2px;
+}
+
+.sort {
+  font-family: var(--second-font, Arial, sans-serif);
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--text-black, black);
+  background-color: var(--filter-background);
+}
+
+.button-sort-text {
+  color: var(--styly-button, gray);
+  border-bottom-width: 1px;
+  border-bottom-style: dotted;
+  border-bottom-color: var(--basic-red, red);
+}
+
+.button-sort-text:focus, .button-sort-text:hover {
+  color: var(--text-black, black);
+  border-bottom-style: solid;
+}
+
+.button-sort-text:active {
+  color: var(--basic-red, red);
+  border-bottom: none;
+}
+
+/* код для стрелок */
+
+.pagination .catalog-button:not([href]) {
+  color: var(--wight, white);
+  background-color: var(--basic-red, red);
+}
+
+.second-info .second-info-title {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--text-black, black);
+  background-color: transparent;
+}
+
+.second-info .content {
+  font-family: var(--second-font, Arial, sans-serif);
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--text-black, black);
+  background-color: transparent;
 }
