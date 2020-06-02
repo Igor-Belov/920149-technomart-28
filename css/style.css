@@ -58,15 +58,19 @@ body {
   min-width: 1220px;
   margin: 0;
   padding: 0;
-  font-family: var(--first-font, Arial, sans-serif);
+  
+  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  font-weight: 400;
+  font-family: var(--first-font, Arial, sans-serif);
   color: var(--Text-black, black);
+  
   background-color: var(--Wight, white);
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -91,8 +95,8 @@ img {
 
 ul {
   list-style-type: none;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 fieldset {
@@ -114,11 +118,11 @@ fieldset {
 }
 
 .top-header-site {
-  background-color: var(--basic-grey, darkblue);
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   color: var(--Wight, white);
+  background-color: var(--basic-grey, darkblue);
 }
 
 .logo-header-site {
@@ -126,8 +130,9 @@ fieldset {
   width: 220px;
   height: 47px;
   padding: 12px 57px 17px 55px;
+  
+  box-shadow: inset 0 -5px 0 var(--logo-shadow, darkred);
   background-color: var(--basic-red, red);
-  box-shadow: inset 0px -5px 0px var(--logo-shadow, darkred);
 }
 
 .logo-header-site[href]:active {
@@ -136,9 +141,9 @@ fieldset {
 
 .input-search {
   font: inherit;
-  background-color: transparent;
   border: none;
   outline: none;
+  background-color: transparent;
 }
 
 .input-search::-moz-placeholder {
@@ -160,15 +165,19 @@ fieldset {
 }
 
 .input-search:focus {
-  background-color: var(--wight, white);
   color: var(--text-black, black);
+  background-color: var(--wight, white);
 }
 
-.link-bookmarked:hover, .link-bookmarked:focus, .link-bascet:hover, .link-bascet:focus {
+.link-bookmarked:hover, 
+.link-bookmarked:focus, 
+.link-bascet:hover, 
+.link-bascet:focus {
   /* Иконка меняет подсветку, и у поиска тоже. Но у нас пока нет икогок */
 }
 
-.link-bookmarked:active, .link-bascet:active {
+.link-bookmarked:active,
+.link-bascet:active {
   color: var(--semi-transparent);
   background-color: var(--dark-blue, darkblue);
 }
@@ -177,7 +186,8 @@ fieldset {
   background-color: var(--basic-green, lightgreen);
 }
 
-.link-arrange:focus, .link-arrange:hover {
+.link-arrange:focus,
+.link-arrange:hover {
   background-color: var(--success, green);
 }
 
@@ -198,13 +208,15 @@ fieldset {
   display: block;
   width: 270px;
   height: 45px;
-  border: 3px solid var(--basic-red, white);
-  font-family: var(--first-font, Arial, sans-serif);
+  
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
+  font-family: var(--first-font, Arial, sans-serif);
   text-align: center;
   color: var(--basic-red, red);
+  
+  border: 3px solid var(--basic-red, white);
 }
 
 .contact-header-site .adress {
@@ -223,7 +235,8 @@ fieldset {
   background-color: var(--wight, white);
 }
 
-.entrace .link:hover, .entrace .link:focus {
+.entrace .link:hover, 
+.entrace .link:focus {
   color: var(--basic-red, red);
 }
 
@@ -234,11 +247,11 @@ fieldset {
 /* когда появятся иконки сделать их интерактивными */
 
 .output-name-user .link-name-user {
-  background-color: var(--wight, white);
   font-weight: normal;
   font-size: 21px;
   line-height: 21px;
   color: var(--text-black, black);
+  background-color: var(--wight, white);
 }
 
 .output-name-user .link-name-user:active {
@@ -253,7 +266,8 @@ fieldset {
   background-color: transparent;
 }
 
-.nav-person .link:hover, .nav-person .link:focus {
+.nav-person .link:hover, 
+.nav-person .link:focus {
   color: var(--basic-red, red);
 }
 
@@ -261,34 +275,33 @@ fieldset {
   color: var(--basic-greylight, lightgray);
 }
 
-/* А чему тут лучше задавать фон, nav, ul, li или a? */
-
 .nav-header-site .link {
-  background-color: var(--nav-blue, blue);
-  box-shadow: inset 0px -5px 0px var(--nav-shadow, darkblue);
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
+  box-shadow: inset 0 -5px 0 var(--nav-shadow, darkblue);
+  background-color: var(--nav-blue, blue);
 }
 
-.nav-header-site .link[href]:focus, .nav-header-site .link[href]:hover {
+.nav-header-site .link[href]:focus, 
+.nav-header-site .link[href]:hover {
   background-color: var(--nav-shadow);
 }
 
 .nav-header-site .link[href]:active {
-  background-color: var(--nav-active, darkblue);
-  box-shadow: inset 0px -5px 0px var(--nav-shadow, darkblue);
   color: var(--semi-transparent, gray);
+  box-shadow: inset 0 -5px 0 var(--nav-shadow, darkblue);
+  background-color: var(--nav-active, darkblue);
 }
 
 /* footer */
 
 .footer-site {
-  background-color: var(--nav-blue, blue);
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
+  background-color: var(--nav-blue, blue);
 }
 
 .logo-footer-site {
@@ -296,8 +309,9 @@ fieldset {
   width: 220px;
   height: 68px;
   padding: 21px 42px 25px 42px;
+
+  box-shadow: inset 0 -5px 0 var(--logo-shadow, darkred);
   background-color: var(--basic-red);
-  box-shadow: inset 0px -5px 0px var(--logo-shadow, darkred);
 }
 
 .adress-footer-site {
@@ -308,7 +322,8 @@ fieldset {
   color: var(--basic-background, white);
 }
 
-.nav-footer-site .link[href]:hover, .nav-footer-site .link[href]:focus {
+.nav-footer-site .link[href]:hover, 
+.nav-footer-site .link[href]:focus {
   text-decoration: underline;
 }
 
@@ -321,7 +336,8 @@ fieldset {
   color: var(--special-yellowlight, lightyellow);
 }
 
-.trade-footer-site .link:hover, .trade-footer-site .link:focus {
+.trade-footer-site .link:hover, 
+.trade-footer-site .link:focus {
   text-decoration: underline;
 }
 
@@ -359,7 +375,8 @@ fieldset {
   color: var(--special-yellowlight, lightyellow);
 }
 
-.feedback .link:hover, .feedback .link:focus {
+.feedback .link:hover, 
+.feedback .link:focus {
   text-decoration: underline;
 }
 
@@ -386,7 +403,8 @@ fieldset {
   background-color: var(--tile-none, red);
 }
 
-.info-tile .button-tile:hover, .info-tile .button-tile:focus {
+.info-tile .button-tile:hover, 
+.info-tile .button-tile:focus {
   background-color: var(--tile-hover, red);
 }
 
@@ -415,27 +433,27 @@ fieldset {
 }
 
 .slider-promo .title {
-  background-color: transparent;
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
   text-transform: uppercase;
+  background-color: transparent;
 }
 
 .slider-promo .description {
-  background-color: transparent;
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
+  background-color: transparent;
 }
 
 /* Тут еще будут стили для кнопок */
 
 .design-button {
-  font-family: var(--first-font, Arial, sans-serif);
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
+  font-family: var(--first-font, Arial, sans-serif);
   text-align: center;
   text-transform: uppercase;
   color: var(--wight, white);
@@ -478,7 +496,7 @@ fieldset {
 }
 
 .card-product:focus .card-product:hover {
-  box-shadow: 0px 4px 20px var(--card-shadow, lightgray);
+  box-shadow: 0 4px 20px var(--card-shadow, lightgray);
 }
 
 .button-second-layer .button-buy {
@@ -488,15 +506,17 @@ fieldset {
   text-align: center;
   text-transform: uppercase;
   color: var(--wight, white);
+  
+  box-shadow: inset 0 -3px 0 var(--buy-button-shadow, green);
   background-color: var(--basic-green);
-  box-shadow: inset 0px -3px 0px var(--buy-button-shadow, green);
   border-radius: 2px;
 }
 
 /* добавить иконку и интерактив сней */
 
-.button-second-layer .button-buy:focus, .button-second-layer .button-buy:hover {
-  background: var(--success, lightgreen);
+.button-second-layer .button-buy:focus, 
+.button-second-layer .button-buy:hover {
+  background-color: var(--success, lightgreen);
 }
 
 .button-second-layer .button-buy:active {
@@ -510,6 +530,7 @@ fieldset {
   text-align: center;
   text-transform: uppercase;
   color: var(--nav-blue, blue);
+  
   background-color: transparent;
   border: 3px solid var(--basic-green, green);
   border-radius: 2px;
@@ -517,7 +538,8 @@ fieldset {
 
 /* добавить иконку и интерактив с ней */
 
-.button-second-layer .button-bookmark:focus, .button-second-layer .button-bookmark:hover {
+.button-second-layer .button-bookmark:focus, 
+.button-second-layer .button-bookmark:hover {
   border-color: var(--nav-blue, blue);
 }
 
@@ -526,19 +548,19 @@ fieldset {
 }
 
 .card-product .title {
-  font-family: var(--second-font, Arial, sans-serif);
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
+  font-family: var(--second-font, Arial, sans-serif);
   text-align: center;
   color: var(--text-black, black);
 }
 
 .card-product .old-price {
-  font-family: var(--second-font, Arial, sans-serif);
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
+  font-family: var(--second-font, Arial, sans-serif);
   text-align: center;
   text-decoration: line-through;
   text-transform: uppercase;
@@ -548,16 +570,18 @@ fieldset {
 /* я вырезал новую стрелку с фоном. Иначе я не понимаю, как сделать что бы фон не вылеза в вырезы стрелки */
 
 .card-product .new-price {
-  background-color: var(--basic-red, red);
-  background-image: url("../img/red-button-backgraund.png");
-  background-repeat: no-repeat;
-  font-family: var(--second-font, Arial, sans-serif);
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
+  font-family: var(--second-font, Arial, sans-serif);
   text-align: center;
   text-transform: uppercase;
   color: var(--wight, white);
+  
+  background-color: var(--basic-red, red);
+  background-image: url("../img/red-button-backgraund.png");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .popular-vendors .top-section {
@@ -577,8 +601,9 @@ fieldset {
   border: 1px solid var(--border-card, gray);
 }
 
-.popular-vendors .vendor:focus, .popular-vendors .vendor:hover {
-  box-shadow: 0px 4px 20px var(--card-shadow, lightgray);
+.popular-vendors .vendor:focus, 
+.popular-vendors .vendor:hover {
+  box-shadow: 0 4px 20px var(--card-shadow, lightgray);
 }
 
 .popular-vendors .vendor:active {
@@ -598,38 +623,40 @@ fieldset {
 }
 
 .service .text {
-  font-family: var(--second-font, Arial, sans-serif);
   font-size: 13px;
   line-height: 24px;
+  font-family: var(--second-font, Arial, sans-serif);
   color: var(--text-black, black);
 }
 
+.service-slider {
 /* тут будет оформление слайдера */
-
-.service-slider {}
+}
 
 .button-slider-service {
-  background-color: var(--nav-blue, darkblue);
-  box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
+  background-color: var(--nav-blue, darkblue);
   align-items: center;
   color: var(--wight, white);
+  
   border: none;
   outline: none;
+  box-shadow: 0 1px 0 #293449, inset 0 1px 0 #405069;
 }
 
-.button-slider-service:focus, .button-slider-service:hover {
+.button-slider-service:focus, 
+.button-slider-service:hover {
   background-color: var(--nav-shadow, darkblue);
 }
 
 /* подсветка должна гореть пока на слайде */
 
 .button-slider-service:active {
-  background-color: var(--wight, white);
-  box-shadow: 0px 1px 0px #FFFFFF, inset 0px 1px 0px #FFFFFF;
   color: var(--nav-blue, darkblue);
+  background-color: var(--wight, white);
+  box-shadow: 0 1px 0 var(--wight, white), inset 0 1px 0 var(--wight, white);
 }
 
 .slide-service .slide-title {
@@ -641,10 +668,10 @@ fieldset {
 }
 
 .slide-service .text {
-  font-family: var(--second-font, Arial, sans-serif);
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
+  font-family: var(--second-font, Arial, sans-serif);
   color: var(--text-black, black)
 }
 
@@ -657,10 +684,10 @@ fieldset {
 }
 
 .bottom-main .text {
-  font-family: var(--second-font, Arial, sans-serif);
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
+  font-family: var(--second-font, Arial, sans-serif);
   color: var(--text-black, black);
 }
 
@@ -683,40 +710,40 @@ fieldset {
 }
 
 .breadcrumbs {
-  font-family: var(--second-font, Arial, sans-serif);
   font-weight: normal;
   font-size: 13px;
   line-height: 18px;
+  font-family: var(--second-font, Arial, sans-serif);
   text-transform: uppercase;
   color: var(--text-black, black);
   background-color: transparent;
 }
 
 .filter .main-title {
-  font-family: var(--second-font, Arial, sans-serif);
   font-weight: normal;
   font-size: 13px;
   line-height: 18px;
+  font-family: var(--second-font, Arial, sans-serif);
   text-transform: uppercase;
   color: var(--text-black, black);
   background-color: var(--filter-background, gray);
 }
 
 .filter .section-title {
-  font-family: var(--second-font, Arial, sans-serif);
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
+  font-family: var(--second-font, Arial, sans-serif);
   text-transform: uppercase;
   color: var(--text-black, black);
   background-color: transparent;
 }
 
 .filter .checkbox-name-item {
-  font-family: var(--second-font, Arial, sans-serif);
   font-weight: normal;
   font-size: 15px;
   line-height: 19px;
+  font-family: var(--second-font, Arial, sans-serif);
   text-transform: uppercase;
   color: var(--text-black, black);
   background-color: transparent;
@@ -729,20 +756,22 @@ fieldset {
 /* прописать состояния для иконок */
 
 .catalog-button {
-  font-family: var(--second-font, Arial, sans-serif);
   font-weight: normal;
   font-size: 13px;
   line-height: 18px;
-  text-transform: uppercase;
+  font-family: var(--second-font, Arial, sans-serif);
   text-align: center;
+  text-transform: uppercase;
   color: var(--text-black, black);
+  
   background-color: var(--wight, white);
   border: 1px solid var(--border-button-catalog, gray);
   border-radius: 2px;
   outline: none;
 }
 
-.catalog-button:focus, .catalog-button:hover {
+.catalog-button:focus, 
+.catalog-button:hover {
   border: 1px solid var(--basic-greylight, lightgray);
   border-radius: 2px;
 }
@@ -753,10 +782,10 @@ fieldset {
 }
 
 .sort {
-  font-family: var(--second-font, Arial, sans-serif);
   font-weight: normal;
   font-size: 13px;
   line-height: 18px;
+  font-family: var(--second-font, Arial, sans-serif);
   text-transform: uppercase;
   color: var(--text-black, black);
   background-color: var(--filter-background);
@@ -769,7 +798,8 @@ fieldset {
   border-bottom-color: var(--basic-red, red);
 }
 
-.button-sort-text:focus, .button-sort-text:hover {
+.button-sort-text:focus, 
+.button-sort-text:hover {
   color: var(--text-black, black);
   border-bottom-style: solid;
 }
@@ -796,10 +826,10 @@ fieldset {
 }
 
 .second-info .content {
-  font-family: var(--second-font, Arial, sans-serif);
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
+  font-family: var(--second-font, Arial, sans-serif);
   color: var(--text-black, black);
   background-color: transparent;
 }
