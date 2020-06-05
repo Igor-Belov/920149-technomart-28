@@ -123,10 +123,9 @@ fieldset {
 
 .top-header-site {
   display: flex;
-  height: 42px;
-  align-items: center;
-  justify-content: space-between;
- 
+  padding: 0 130px;
+  height: ;
+
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -139,16 +138,16 @@ fieldset {
   align-items: center;
   width: 386px;
   height: 100%;
-  margin-right: 130px;
   
 
 }
 .logo-header-site {
+  position: relative;
+  
   display: block;
   width: 220px;
-  height: 47px;
+  height: 42px;
   padding: 12px 57px 17px 55px;
-  margin-left: 130px;
 
   box-shadow: inset 0 -5px 0 var(--logo-shadow, darkred);
   background-color: var(--basic-red, red);
@@ -158,18 +157,18 @@ fieldset {
   background-color: var(--error, darkred);
 }
 
+.top-header-site .form-search {
+  display: flex;
+  flex-grow: 1;
+}
+
 .input-search {
+  flex-grow: 1;
+
   font: inherit;
   border: none;
   outline: none;
   background-color: transparent;
-}
-
-.top-header-site .form-search {
-  display: flex;
-  flex-grow: 1;
-
-
 }
 
 .input-search::-moz-placeholder {
@@ -197,12 +196,11 @@ fieldset {
 
 .trade-header-site .link {
   display: flex;
+  height: 100%;
   flex-grow: 1;
   align-items: center;
   justify-content: center;
-  height: 100%;
   min-width: 33%;
-  outline:1px solid red;
 }
 
 .link-bookmarked:hover, 
@@ -235,13 +233,14 @@ fieldset {
 
 .center-header-site {
   display: flex;
+  margin: 0 130px;
+  margin-top: 46px;
 }
 
 .header-title {
   width: 197px;
-  height: 71px;
-  margin-top: 30px;
-  margin-left: 160px;
+  margin: 0;
+  margin-left: 33px;
 
   font-style: italic;
   font-weight: normal;
@@ -251,31 +250,51 @@ fieldset {
 }
 
 .contact-header-site {
-align-self: center;  
+margin-left: 90px;
 }
 .contact-header-site .tel {
   display: inline-block;
   width: 270px;
   height: 45px;
+  padding:7px 45px 8px 74px;
   
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
   font-family: var(--first-font, Arial, sans-serif);
-  text-align: center;
   color: var(--basic-red, red);
   
-  border: 3px solid var(--basic-red, white);
+  border: 3px solid var(--wight, white);
 }
 
 .contact-header-site .adress {
+  margin: 0px;
+  margin-top: 3px;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
+  text-align: center;
   color: var(--nav-blue, darkblue);
 }
 
+.entrace {
+display: flex;
+margin-left: auto;
+}
+
+.entrace li:nth-child(1) .link{
+padding: 12px 27px 12px 19px; 
+}
+
+.entrace li:nth-child(2) .link{
+padding: 12px 24px;
+margin-left: 10px;
+
+}
+
 .entrace .link {
+  display: block;
+
   font-weight: normal;
   font-size: 21px;
   line-height: 21px;
@@ -326,34 +345,21 @@ align-self: center;
 
 .nav-header-site {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 940px;
-  height: 60px;
-  margin: 0 auto;
-  outline:1px solid red;
-}
-
-.nav-header-site li {
-  display: flex;
-  flex-grow: 1;
-  height: 100%;
-  /* можно задать любое значение flex-basis, кроме auto. Почему?*/
-  flex-basis: 1000px;
+  justify-content: center;
+  align-items: stretch;
+  margin: 40px 130px 0 130px;
 }
 
 .nav-header-site .link {
-  display: flex;
-  flex-grow: 1;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  Padding: 16px 0 20px 0; 
+  width: 134px;
   height: 100%;
-  outline:1px solid red;
-
 
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
+  text-align: center;
   box-shadow: inset 0 -5px 0 var(--nav-shadow, darkblue);
   background-color: var(--nav-blue, blue);
 }
