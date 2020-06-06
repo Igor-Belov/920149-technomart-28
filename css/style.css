@@ -101,6 +101,7 @@ ul {
 
 fieldset {
   border: none;
+  margin: 0;
 }
 
 .visually-hidden {
@@ -111,20 +112,26 @@ fieldset {
   margin: -1px;
 }
 
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
 /* header */
 
 .header-site {
   display: flex;
-  width: 1200px;
-  height: 320px;
   flex-direction: column;
   background-color: var(--basic-background, lightblue);
 }
 
 .top-header-site {
   display: flex;
-  padding: 0 130px;
-  height: ;
 
   font-weight: 400;
   font-size: 18px;
@@ -132,18 +139,21 @@ fieldset {
   color: var(--Wight, white);
   background-color: var(--basic-grey, darkblue);
 }
-.top-header-site .trade-header-site {
+
+.wrapper {  
+  display: inherit;  
+  width: 940px;
+  margin: 0 auto;
+}
+
+.trade-header-site {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   width: 386px;
-  height: 100%;
-  
-
+  height: 100%;  
 }
+
 .logo-header-site {
-  position: relative;
-  
   display: block;
   width: 220px;
   height: 42px;
@@ -157,7 +167,7 @@ fieldset {
   background-color: var(--error, darkred);
 }
 
-.top-header-site .form-search {
+ .form-search {
   display: flex;
   flex-grow: 1;
 }
@@ -195,12 +205,12 @@ fieldset {
 }
 
 .trade-header-site .link {
-  display: flex;
-  height: 100%;
-  flex-grow: 1;
-  align-items: center;
-  justify-content: center;
-  min-width: 33%;
+display: block;
+max-width: 150px;
+flex-grow: 1;
+padding-top: 9px;
+padding-bottom: 9px;
+text-align: center;
 }
 
 .link-bookmarked:hover, 
@@ -216,7 +226,10 @@ fieldset {
   background-color: var(--dark-blue, darkblue);
 }
 
-.link-arrange {
+.trade-header-site .link-arrange {
+  padding-left: 19px;
+  padding-right: 16px;
+  flex-grow: 0;
 
   background-color: var(--basic-green, lightgreen);
 }
@@ -233,8 +246,8 @@ fieldset {
 
 .center-header-site {
   display: flex;
-  margin: 0 130px;
-  margin-top: 46px;
+  padding-top: 46px;
+  padding-bottom: 40px;
 }
 
 .header-title {
@@ -243,6 +256,14 @@ fieldset {
   margin-left: 33px;
 
   font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--basic-red, red);
+}
+
+.text-center-header-site {
+  width: 197px;
   font-weight: normal;
   font-size: 16px;
   line-height: 23px;
@@ -289,11 +310,11 @@ padding: 12px 27px 12px 19px;
 .entrace li:nth-child(2) .link{
 padding: 12px 24px;
 margin-left: 10px;
-
 }
 
 .entrace .link {
   display: block;
+  max-width: 160px;
 
   font-weight: normal;
   font-size: 21px;
@@ -315,6 +336,8 @@ margin-left: 10px;
 /* когда появятся иконки сделать их интерактивными */
 
 .output-name-user .link-name-user {
+  display: block;
+  padding: 12px 56px;
   font-weight: normal;
   font-size: 21px;
   line-height: 21px;
@@ -324,6 +347,25 @@ margin-left: 10px;
 
 .output-name-user .link-name-user:active {
   color: var(--basic-greylight, gray);
+}
+
+.person {
+  margin-left: auto
+}
+
+.nav-person {
+  display: flex;
+  justify-content: center;
+  margin-top: 7px;
+  align-items: center;
+}
+
+.marker-nav-person {
+  margin: 0px 13px;
+  width: 7px;
+	height: 7px;
+	background: var(--nav-blue, darkblue);
+	border-radius: 50%;
 }
 
 .nav-person .link {
@@ -343,18 +385,19 @@ margin-left: 10px;
   color: var(--basic-greylight, lightgray);
 }
 
+.bottom-header-site {
+  padding-bottom: 60px;
+}
+
 .nav-header-site {
   display: flex;
-  justify-content: center;
-  align-items: stretch;
-  margin: 40px 130px 0 130px;
+  flex-wrap: wrap;
 }
 
 .nav-header-site .link {
   display: block;
-  Padding: 16px 0 20px 0; 
+  padding: 16px 0 20px 0; 
   width: 134px;
-  height: 100%;
 
   font-weight: normal;
   font-size: 18px;
@@ -384,6 +427,14 @@ margin-left: 10px;
   background-color: var(--nav-blue, blue);
 }
 
+.top-footer-site {
+padding-bottom: 54px;  
+}
+.first-line-footer-site {
+display: flex;
+justify-content: space-between;
+}
+
 .logo-footer-site {
   display: block;
   width: 220px;
@@ -395,10 +446,18 @@ margin-left: 10px;
 }
 
 .adress-footer-site {
+  margin-top: 22px;
+  margin-bottom: 0px;
   color: var(--basic-background, white);
 }
 
+.nav-footer-site .list-links {
+display: flex;
+margin-top: 37px;
+}
+
 .nav-footer-site .link {
+  margin-left: 59px;
   color: var(--basic-background, white);
 }
 
@@ -411,8 +470,18 @@ margin-left: 10px;
   text-decoration: none;
   color: var(--semi-transparent, gray);
 }
+.second-line-footer-site {
+  display: flex;
+  justify-content: space-between;
+}
+
+.trade-footer-site .list-links {
+  display: flex;
+  margin-top: 27px;
+}
 
 .trade-footer-site .link {
+  margin-left: 59px;
   color: var(--special-yellowlight, lightyellow);
 }
 
@@ -429,19 +498,38 @@ margin-left: 10px;
 }
 
 .bottom-footer-site {
+  display: flex;
+  padding-top: 35px;
+  padding-bottom: 29px;
   background-color: var(--nav-shadow, darkblue);
 }
 
 .copyright-footer-site {
+  margin: 0;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   color: var(--wight, white);
 }
 
+.social-footer-site {
+  display: flex;
+  margin-left: 161px;
+}
 /* тут будет код для интерактивный иконок соц сетей */
 
+.feedback {
+  display: flex;
+  margin-right: 13px;
+  margin-left: auto;
+}
+
+.feedback .text:nth-last-child(n+2) {
+ margin-right: 51px;
+}
+
 .feedback .text {
+  margin: 0;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
@@ -530,6 +618,9 @@ margin-left: 10px;
 /* Тут еще будут стили для кнопок */
 
 .design-button {
+  display: inline-block;
+  padding-top: 11px;
+  padding-bottom: 9px;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
@@ -571,8 +662,19 @@ margin-left: 10px;
 }
 
 .card-product {
+  width: 220px;
+  height: 100%;
   background-color: var(--wight, white);
   border: 1px solid var(--border-card);
+}
+
+.first-layer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  min-height: 318px;
 }
 
 .card-product:focus .card-product:hover {
@@ -628,6 +730,8 @@ margin-left: 10px;
 }
 
 .card-product .title {
+  margin-bottom: 7px;
+
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
@@ -636,7 +740,16 @@ margin-left: 10px;
   color: var(--text-black, black);
 }
 
+.image-product {  
+margin: auto;
+order: -1;  
+}
+
 .card-product .old-price {
+  margin: 0px;
+  margin-bottom: 13px;
+  min-height: 18px;
+
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
@@ -650,6 +763,12 @@ margin-left: 10px;
 /* я вырезал новую стрелку с фоном. Иначе я не понимаю, как сделать что бы фон не вылеза в вырезы стрелки */
 
 .card-product .new-price {
+  margin: 0px;
+  margin-bottom: 21px;
+  width: 141px;
+  min-height: 38px;
+  padding: 10px 0;
+
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
@@ -660,6 +779,7 @@ margin-left: 10px;
   
   background-color: var(--basic-red, red);
   background-image: url("../img/red-button-backgraund.png");
+  background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -755,20 +875,53 @@ margin-left: 10px;
   color: var(--text-black, black)
 }
 
+.bottom-main {
+  display: flex;
+  width: 940px;
+  margin: 70px auto;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  width: 478px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+
 .bottom-main .title {
   font-weight: normal;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
   color: var(--text-black, black);
+  margin-bottom: 11px;
 }
 
 .bottom-main .text {
+
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
   font-family: var(--second-font, Arial, sans-serif);
   color: var(--text-black, black);
+}
+
+.bottom-main .text:last-of-type {
+  margin-bottom: 0;
+}
+
+.carrier li{
+  margin: 6px 0px;
+}
+
+.carrier :nth-child(1) {
+  margin-top: 1px;
+  margin-bottom: 6px;
 }
 
 .bottom-main .carrier {
@@ -778,9 +931,36 @@ margin-left: 10px;
   color: var(--text-black, black);
 }
 
+.about-me .design-button {
+  width: 220px;
+  margin-top: auto;
+}
+
+.contact .design-button {
+  width: 300px;
+  margin-top: auto;
+}
+
+.map {
+  display: block;
+  width: 300px;
+  height:158px;
+  margin-top: 32px;
+  margin-bottom: 25px;
+}
 /* main catalog */
 
+.page-catalog {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  align-content: start;
+}
 .main-title {
+  grid-column: 1 / -1;
+  margin: 0px;
+  margin-bottom: 20px;
+
+  padding: 29px 0 30px 28px;
   font-weight: normal;
   font-size: 30px;
   line-height: 30px;
@@ -790,6 +970,17 @@ margin-left: 10px;
 }
 
 .breadcrumbs {
+  grid-column: 1 / -1;
+  order: -1;
+  padding: 20px 0;
+}
+
+.breadcrumbs-list {
+  display: flex;
+}
+
+.breadcrumbs .link {
+  padding-right: 40px;
   font-weight: normal;
   font-size: 13px;
   line-height: 18px;
@@ -809,7 +1000,26 @@ margin-left: 10px;
   background-color: var(--filter-background, gray);
 }
 
+.brend .input-checkbox-brend {
+  margin: 0px 12px 16px 0px;
+}
+
+.brend .checkbox-brend:nth-last-of-type(1) {
+  margin-bottom: 26px;
+}
+
+.power-supply .input-radio {
+  margin: 0 10px 16px 0;
+}
+
+.filter .catalog-button {
+  width: 100%;
+}
+
 .filter .section-title {
+  margin: 0;
+  padding: 0;
+
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
@@ -836,6 +1046,7 @@ margin-left: 10px;
 /* прописать состояния для иконок */
 
 .catalog-button {
+  padding: 10px 15px;
   font-weight: normal;
   font-size: 13px;
   line-height: 18px;
@@ -859,6 +1070,10 @@ margin-left: 10px;
 .catalog-button:active {
   border: 1px solid var(--basic-red, red);
   border-radius: 2px;
+}
+
+.right-side-catalog {
+  margin-left: 20px;
 }
 
 .sort {
@@ -889,11 +1104,34 @@ margin-left: 10px;
   border-bottom: none;
 }
 
+.catalog-product {
+  margin-top: 28px;
+}
+
+.card-products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: max-content;
+  grid-gap: 20px;
+}
+
 /* код для стрелок */
+.pagination-list {
+  display: flex;
+  margin-top: 48px;
+}
+
+.pagination-list .catalog-button {
+  margin-right: 10px;
+}
 
 .pagination .catalog-button:not([href]) {
   color: var(--wight, white);
   background-color: var(--basic-red, red);
+}
+
+.second-info {
+  background-color: var(--basic-background, lightblue);
 }
 
 .second-info .second-info-title {
