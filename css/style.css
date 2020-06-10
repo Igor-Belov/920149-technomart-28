@@ -576,32 +576,36 @@ fieldset {
 /* main */
 
 .main-index {
-  padding-top: 59px;
+  padding-top: 60px;
   padding-bottom: 70px;
 }
 
+.promo {
+  display: flex;
+  
+}
+
 .left-column-promo {
-  float: left;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin-right: 20px;
-  font-size: 0;
+
 }
 
 .right-column-promo {
-  float: right;
-}
-
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
+  display: flex;
+  flex-direction: column;
 }
 
 .info-tile {
+  margin-bottom: 20px;
   width: 300px;
+  min-height: 123px;
 }
 
-.right-column-promo > .info-tile:not(:last-child) {
-  margin-bottom: 20px;
+.right-column-promo > .info-tile:last-child {
+  margin-bottom: 0px;
 }
 
 
@@ -634,13 +638,10 @@ fieldset {
 }
 
 .tile-material {
-  display: inline-block;
-  margin-right: 20px;
   background-color: var(--special-ylellow, yellow);
 }
 
 .tile-tools {
-  display: inline-block;
   background-color: var(--special-blue, lightblue);
 }
 
@@ -656,7 +657,18 @@ fieldset {
   background-color: var(--second-special-ylellow, yellow);
 }
 
-.slider-promo .title {
+.slider-promo {
+  margin: 0;
+  width: 620px;
+}
+
+.slide-promo {
+  margin: 0;
+  min-height: 266px;
+}
+
+.slide-promo .title {
+  margin: 0;
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
@@ -664,7 +676,7 @@ fieldset {
   background-color: transparent;
 }
 
-.slider-promo .description {
+.slide-promo .description {
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
@@ -696,7 +708,6 @@ fieldset {
   background-image: url("../img/slide-drill.jpg");
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: 620px 266px;
 }
 
 .slide-perforator {
@@ -704,7 +715,6 @@ fieldset {
   background-image: url("../img/slide-perforator.jpg");
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: 620px 266px;
 }
 
 .popular-products {
