@@ -1,16 +1,3 @@
-/* Отлючение блоков */
-
-.popup-map {
-  display: none;
-}
-
-.write-us {
-  display: none;
-}
-
-.message-buy {
-  display: none;
-}
 
 /* Переменные */
 
@@ -43,6 +30,7 @@
   --title-background: #F2F6F8;
   --filter-background: #F7F3EC;
   --border-button-catalog: #E5E5E5;
+  --buttoms-panel: #F1F1F1;
   --logo-shadow: rgba(0, 0, 0, 0.24);
   --card-shadow: rgba(0, 0, 0, 0.15);
   --tile-none: rgba(255, 255, 255, 0.3);
@@ -697,6 +685,8 @@ fieldset {
   text-transform: uppercase;
   color: var(--wight, white);
   background-color: var(--basic-red, red);
+  outline: none;
+  border: none;
 }
 
 .design-button:active {
@@ -1322,4 +1312,74 @@ margin-top: 20px;
   font-family: var(--second-font, Arial, sans-serif);
   color: var(--text-black, black);
   background-color: transparent;
+}
+
+.message-buy {
+  width: 620px;
+  min-height: 282px;
+  outline: auto;
+} 
+
+.text-message {
+  width: 100%;
+  text-align: center;
+  padding-top: 73px;
+  padding-bottom: 67px; 
+  margin: 0px;
+
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  font-family: var(--first-font, Arial, sans-serif);
+}
+
+.buttons-panel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 37px 112px 37px 114px;
+  background-color: var(--buttoms-panel, gray);
+}
+
+.buttons-panel .design-button:not(:first-of-type) {
+margin-left: 10px;
+}
+
+.popup-map {
+  width: 943px;
+  min-height: 449px;
+}
+
+.write-us {
+  width: 620px;
+  min-height: 430px;
+  outline: auto;
+}
+
+.form-write-us {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 460px;
+  margin: 46px auto 37px;
+}
+
+.form-write-us .top-input {
+  width: 220px;
+}
+
+.form-write-us .bottom-input {
+  width: 460px;
+  min-height: 114px;
+}
+
+.bottom-write-us {
+  padding: 37px 0;
+  background-color: var(--buttoms-panel, gray);
+}
+
+.bottom-write-us .design-button {
+  display: block;
+  width: 460px;
+  margin: auto;
 }
