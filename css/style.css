@@ -1255,13 +1255,13 @@ justify-content: space-between;
 }
 
 .service {
-  padding-top: 64px;
-  padding-bottom: 99px;
   background-color: var(--basic-background, lightblue);
 }
 
-.service {
+.service .wrapper{
   position: relative;
+  padding-top: 64px;
+  padding-bottom: 99px;
 }
 
 .header-service {
@@ -1354,7 +1354,7 @@ justify-content: space-between;
   position: absolute;
   content: "";
   bottom: 4px;
-  right: 131px;
+  right: -1px;
   width: 468px;
   height: 261px;
   background-color: transparent;
@@ -1368,7 +1368,7 @@ justify-content: space-between;
   position: absolute;
   content: "";
   bottom: 5px;
-  right: 122px;
+  right: -8px;
   width: 389px;
   height: 283px;
   background-color: transparent;
@@ -1382,7 +1382,7 @@ justify-content: space-between;
   position: absolute;
   content: "";
   bottom: 2px;
-  right: 120px;
+  right: -10px;
   width: 465px;
   height: 285px;
   background-color: transparent;
