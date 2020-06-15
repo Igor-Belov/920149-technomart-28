@@ -1157,6 +1157,7 @@ justify-content: space-between;
 }
 
 .card-product .old-price {
+  display: block;
   margin: 0px;
   margin-bottom: 13px;
   min-height: 18px;
@@ -1173,6 +1174,7 @@ justify-content: space-between;
 /* я вырезал новую стрелку с фоном. Иначе я не понимаю, как сделать что бы фон не вылеза в вырезы стрелки */
 
 .card-product .new-price {
+  display: block;
   margin: 0px;
   margin-bottom: 21px;
   width: 141px;
@@ -1185,8 +1187,10 @@ justify-content: space-between;
   text-align: center;
   text-transform: uppercase;
   color: var(--wight, white);
+  
   background-color: var(--basic-red, red);
-  background-image: url("../img/red-button-backgraund.png");
+  background-image: url("../img/red-button.svg");
+
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
