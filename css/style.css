@@ -1782,12 +1782,20 @@ justify-content: space-between;
   top: 50%;
   left: 50%;
   z-index: 3;
-  margin-left: -472px;
+  margin-left: -470px;
   margin-top: -225px;
-  width: 943px;
+  width: 940px;
   height: 449px;
   background-color: var(--basic-grey, gray);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.popup-map .image-map {
+  max-width: none;
+  width: auto;
+  margin-top: -14px;
+  margin-left: -15px;
 }
 
 .popup-map::after {
