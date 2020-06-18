@@ -51,9 +51,10 @@
 }
 
 body {
-  min-width: 1220px;
+  min-width: 960px;
   margin: 0;
   padding: 0;
+
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -85,14 +86,14 @@ img {
 }
 
 ul {
-  list-style-type: none;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 fieldset {
-  border: none;
   margin: 0;
+  border: none;
 }
 
 .visually-hidden {
@@ -108,10 +109,10 @@ fieldset {
 }
 
 .page-body {
-  min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
+  min-height: 100%;
 }
 
 /* header */
@@ -155,13 +156,14 @@ fieldset {
 
 .logo-header-site::after {
   position: absolute;
-  bottom: -5px;
   left: 0;
+  bottom: -5px;
+
   display: block;
   width: 100%;
   height: 5px;
-  content: "";
   background-color: var(--logo-shadow, darkred);
+  content: "";
 }
 
 .logo-header-site[href]:active {
@@ -181,9 +183,11 @@ fieldset {
   width: 100%;
   height: 100%;
   padding-left: 42px;
+  
   font: inherit;
-  border: none;
+  
   outline: none;
+  border: none;
   background-color: transparent;
 }
 
@@ -191,12 +195,14 @@ fieldset {
   position: absolute;
   top: 12px;
   left: 17px;
-  content: "";
+
   width: 17px;
   height: 17px;
   margin: 0;
   padding: 0;
+  
   cursor: text;
+  content: "";
 } 
 
 .input-search:hover ~ .icon-search path {
@@ -240,13 +246,15 @@ fieldset {
   position: absolute;
   top: 13px;
   left: 20px;
-  content: "";
+
   width: 14px;
   height: 16px;
+  
   background-image: url("../img/icon-bookmark.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
+  content: "";
 }
 
 .link-bascet {
@@ -257,13 +265,14 @@ fieldset {
   position: absolute;
   top: 13px;
   left: 26px;
-  content: "";
+
   width: 15px;
   height: 15px;
   background-image: url("../img/icon-cart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
+  content: "";
 }
 
 .trade-header-site .link:hover::before,
@@ -282,9 +291,9 @@ fieldset {
 }
 
 .trade-header-site .link-arrange {
-  padding-left: 19px;
-  padding-right: 16px;
   flex-grow: 0;
+  padding-right: 16px;
+  padding-left: 19px;
   background-color: var(--basic-green, lightgreen);
 }
 
@@ -308,9 +317,9 @@ fieldset {
 
 .center-header-site {
   display: flex;
+  min-height: 158px;
   padding-top: 46px;
   padding-bottom: 40px;
-  min-height: 158px;
 }
 
 .center-header-site.logged-in {
@@ -319,11 +328,12 @@ fieldset {
 
 .text-center-header-site {
   display: block;
+  width: 197px;
   margin: 0;
   margin-top: -4px;
   margin-left: 31px;
   padding: 0;
-  width: 197px;
+  
   font-style: italic;
   font-weight: normal;
   font-size: 16px;
@@ -341,11 +351,13 @@ fieldset {
   width: 270px;
   min-height: 45px;
   padding: 4px 36px 5px 71px;
+  
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
   font-family: var(--first-font, Arial, sans-serif);
   color: var(--basic-red, red);
+  
   border: 3px solid var(--wight, white);
 }
 
@@ -353,17 +365,21 @@ fieldset {
   position: absolute;
   top: 10px;
   left: 36px;
-  content: "";
+
   width: 19px;
   height: 19px;
+  
   background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  content: "";
 }
 
 .contact-header-site .adress {
-  margin: 0px;
+  max-width: 270px;
+  margin: 0;
   margin-top: 3px;
+  
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
@@ -374,9 +390,9 @@ fieldset {
 .entrace {
   display: flex;
   justify-content: end;
-  margin-left: auto;
-  max-width: 299px;
   flex-wrap: wrap;
+  max-width: 299px;
+  margin-left: auto;
 }
 
 .entrace li:nth-child(1) .link {
@@ -388,8 +404,10 @@ fieldset {
   position: absolute;
   top: 13px;
   left: 19px;
+
   width: 20px;
   height: 17px;
+  
   background-image: url("../img/icon-login.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -404,8 +422,8 @@ fieldset {
 }
 
 .entrace li:nth-child(2) .link {
-  padding: 12px 24px;
   margin-left: 10px;
+  padding: 12px 24px;
 }
 
 .entrace .link {
@@ -429,13 +447,14 @@ fieldset {
 
 .output-name-user {
   position: relative;
-  padding: 12px 0;
   width: 299px;
+  padding: 12px 0;
+  
   font-weight: normal;
   font-size: 21px;
   line-height: 21px;
-  background-color: var(--wight, white);
   text-align: center;
+  background-color: var(--wight, white);
 }
 
 .output-name-user .link-name-user {
@@ -446,6 +465,7 @@ fieldset {
   position: absolute;
   top: 13px;
   left: 15px;
+
   width: 20px;
   height: 18px;
   background-image: url("../img/icon-user.svg");
@@ -457,6 +477,7 @@ fieldset {
   position: absolute;
   top: 14px;
   right: 18px;
+
   width: 20px;
   height: 17px;
   background-image: url("../img/icon-logout.svg");
@@ -492,21 +513,24 @@ fieldset {
 
 .nav-person {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  margin-top: 4px;
   align-items: center;
+  max-width: 299px;
+  margin-top: 4px;
 }
 
 .nav-person li:not(:last-child)::after {
-  content: "";
   display: inline-block;
-  margin: 0px 14px;
-  margin-bottom: 2px;
   width: 4px;
   height: 4px;
+  margin: 0 14px;
+  margin-bottom: 2px;
+  
   vertical-align: middle;
   background-color: var(--nav-blue, darkblue);
   border-radius: 50%;
+  content: "";
 }
 
 .nav-person .link {
@@ -533,8 +557,8 @@ fieldset {
 .nav-header-site {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
   justify-content: space-around;
+  width: 100%;
 }
 
 .nav-header-site .nav-item {
@@ -544,11 +568,13 @@ fieldset {
 .nav-header-site .link {
   display: block;
   padding: 17px 25px 19px 25px;
+  
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
-  text-align: center;
   font-family: var(--first-font, Arial, sans-serif);
+  text-align: center;
+  
   box-shadow: inset 0 -5px 0 var(--nav-shadow, darkblue);
   background-color: var(--nav-blue, blue);
 }
@@ -601,37 +627,44 @@ fieldset {
 
 .logo-footer-site::after {
   position: absolute;
+  bottom: 0;
   left: 0;
-  bottom: 0px;
+
   display: block;
-  height: 5px;
   width: 100%;
-  content: "";
+  height: 5px;
   background-color: var(--logo-shadow, darkred);
+  content: "";
 }
 
 .adress-footer-site {
-  padding-left: 4px;
+  max-width: 330px;
   margin-top: 22px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
+  padding-left: 4px;
   color: var(--basic-background, white);
 }
 
 .nav-footer-site {
+  width: 547px;
   margin-top: 37px;
-  width: 549px;
 }
 
 .nav-footer-site .nav-footer-links {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
   justify-content: space-between;
+  width: 100%;
 }
 
 .nav-footer-site .link {
   margin: 0;
+  margin-right: 5px;
   color: var(--basic-background, white);
+}
+
+.nav-footer-site li:last-child .link {
+  margin: 0;
 }
 
 .nav-footer-site .link[href]:hover,
@@ -651,19 +684,25 @@ fieldset {
 }
 
 .trade-footer-site {
-  width: 525px;
+  width: 523px;
   margin-top: 27px;
 }
 
 .trade-footer-site .trade-footer-links {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
   justify-content: space-between;
+  width: 100%;
 }
 
 .trade-footer-site .link {
+  margin: 0;
+  margin-right: 5px; 
   color: var(--special-yellowlight, lightyellow);
+}
+
+.trade-footer-site li:last-child .link {
+  margin: 0;
 }
 
 .trade-footer-site .link:hover,
@@ -684,6 +723,7 @@ fieldset {
 }
 
 .copyright-footer-site {
+  max-width: 227px;
   margin: 0;
   font-weight: normal;
   font-size: 16px;
@@ -701,8 +741,8 @@ fieldset {
   width: 41px;
   height: 41px;
   margin-right: 4px;
-  border-radius: 50%;
   vertical-align: middle;
+  border-radius: 50%;
   background-color: var(--background-social, darkblue);
 }
 
@@ -742,6 +782,8 @@ fieldset {
 
 .feedback {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 300px;
   margin-right: 13px;
   margin-left: auto;
 }
@@ -801,20 +843,21 @@ fieldset {
 
 .info-tile {
   position: relative;
-  padding: 20px 23px;
-  margin-bottom: 20px;
   width: 300px;
   min-height: 123px;
+  margin-bottom: 20px;
+  padding: 20px 23px;
 }
 
 .right-column-promo > .info-tile:last-child {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .info-tile .name-tile {
   width: 150px;
   margin: 0;
   margin-bottom: 14px;
+  
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
@@ -826,12 +869,14 @@ fieldset {
   top: 1px;
   right: 1px;
   z-index: 1;
-  content: "";
+
   width: 70px;
   height: 70px;
+  
   background-image: url("../img/new.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  content: "";
 }
 
 .info-tile.new::after {
@@ -842,7 +887,8 @@ fieldset {
 .info-tile .button-tile {
   display: block;
   width: 135px;
-  padding: 10px 0;
+  padding: 10px 5px;
+  
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
@@ -885,7 +931,7 @@ fieldset {
 
 .tile-sale {
   background-color: var(--special-greenlight, lightgreen);
-  background-image: url("img/icon-4.svg");
+  background-image: url("../img/icon-4.svg");
   background-repeat: no-repeat;
   background-position: 196px 26px;
   background-size: 59px 72px;
@@ -901,17 +947,17 @@ fieldset {
 
 .slider-promo {
   position: relative;
-  margin: 0;
   width: 620px;
   min-height: 266px;
+  margin: 0;
 }
 
 .slide-promo {
   display: none;
   flex-direction: column;
   align-items: flex-start;
-  margin: 0;
   min-height: 100%;
+  margin: 0;
 }
 
 .slide-promo.slide-current {
@@ -922,6 +968,7 @@ fieldset {
   margin: 0;
   margin-top: 23px;
   margin-left: 24px;
+  
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
@@ -933,6 +980,7 @@ fieldset {
 .slide-promo .description {
   margin-top: 5px;
   margin-left: 24px;
+  
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
@@ -951,6 +999,7 @@ fieldset {
   position: absolute;
   top: 120px;
   left: 24px;
+
   width: 22px;
   height: 39px;
   background-color: transparent;
@@ -969,11 +1018,12 @@ fieldset {
   position: absolute;
   bottom: 36px;
   left: 50%;
+
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   margin-left: -15px;
   padding: 0;
-  display: flex;
-  justify-content: space-between;
 }
 
 .management-slider-promo-round .button {
@@ -998,16 +1048,18 @@ fieldset {
 }
 
 .slide-promo .design-button {
-  margin-top: auto;
-  margin-left: 24px;
-  margin-bottom: 27px;
   min-width: 192px;
+  margin-top: auto;
+  margin-bottom: 27px;
+  margin-left: 24px;
 }
 
 .design-button {
   display: inline-block;
+  padding: 3px;
   padding-top: 11px;
   padding-bottom: 9px;
+  
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
@@ -1052,8 +1104,8 @@ fieldset {
   display: flex;
   align-items: center;
   padding: 25px 0;
-  padding-left: 28px;
   padding-right: 14px;
+  padding-left: 28px;
   background-color: var(--backgraund-popular, lightgray);
 }
 
@@ -1089,6 +1141,7 @@ fieldset {
   justify-content: flex-end;
   align-items: center;
   width: 100%;
+  height: 100%;
   min-height: inherit;
   background-color: var(--wight, white);
   border: 1px solid var(--border-card);
@@ -1100,12 +1153,13 @@ fieldset {
 
 .image-box {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   z-index: 1;
-  margin: 0px;
+
   width: 218px;
   height: 100%;
+  margin: 0;
   background-color: var(--wight, white);
   object-fit: contain;
 }
@@ -1128,12 +1182,13 @@ fieldset {
 .button-buy {
   position: relative;
   z-index: 1;
+
   display: block;
   width: 135px;
-  padding: 10px 0 10px 52px;
   margin: 0 auto;
   margin-top: 38px;
   margin-bottom: 10px;
+  padding: 10px 0 10px 52px;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
@@ -1146,15 +1201,16 @@ fieldset {
 
 .button-buy::before {
   position: absolute;
-  content: "";
   top: 10px;
   left: 30px;
+
   width: 15px;
   height: 15px;
   background-image: url("../img/icon-cart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
+  content: "";
 }
 
 .button-buy:focus,
@@ -1169,16 +1225,19 @@ fieldset {
 .button-bookmark {
   position: relative;
   z-index: 1;
+
   display: block;
   width: 135px;
-  padding: 8px 10px 6px 10px;
   margin: 0 auto;
+  padding: 8px 10px 6px 10px;
+  
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
   color: var(--nav-blue, blue);
+  
   background-color: transparent;
   border: 3px solid var(--basic-green, green);
   border-radius: 2px;
@@ -1196,6 +1255,7 @@ fieldset {
 .card-product .title {
   margin: 0;
   margin-bottom: 7px;
+  padding: 0px 5px;
   font-weight: bold;
   font-size: 18px;
   line-height: 21px;
@@ -1207,6 +1267,7 @@ fieldset {
 .layer-card {
   position: relative;
   order: -1;
+
   width: 218px;
   min-height: 170px;
   margin-bottom: auto;
@@ -1215,9 +1276,10 @@ fieldset {
 .card-product .old-price {
   position: relative;
   display: block;
-  margin: 0px;
-  margin-bottom: 13px;
   min-height: 18px;
+  margin: 0;
+  margin-bottom: 13px;
+  
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
@@ -1231,11 +1293,12 @@ fieldset {
   position: absolute;
   top: 11px;
   left: 0;
-  content: "";
+
   display: block;
   width: 100%;
   height: 1px;
   background-color: var(--old-price, gray);
+  content: "";
 }
 
 .old-price:not(:empty)::after,
@@ -1246,11 +1309,13 @@ fieldset {
 
 .card-product .new-price {
   display: block;
-  margin: 0px;
-  margin-bottom: 20px;
-  width: 100%;
+  min-width: 141px;
   min-height: 38px;
-  padding: 10px 0;
+  margin: 0;
+  margin-bottom: 21px;
+  margin-left: 11px;
+  padding: 10px 15px 10px 2px;
+  
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
@@ -1258,9 +1323,10 @@ fieldset {
   text-align: center;
   text-transform: uppercase;
   color: var(--wight, white);
+  
   background-image: url("../img/red-button.svg");
   background-size: 100% 100%;
-  background-position: 6px 0;
+  background-position: 0 0;
   background-repeat: no-repeat;
 }
 
@@ -1273,16 +1339,16 @@ fieldset {
 
 .image-product[src="img/snippet-18927.png"] {
   width: 100%;
-  padding-left: 38px;
-  padding-right: 52px;
   padding-top: 28px;
+  padding-right: 52px;
+  padding-left: 38px;
 }
 
 .image-product[src="img/snippet-945.png"] {
   width: 100%;
-  padding-left: 32px;
-  padding-right: 42px;
   padding-top: 22px;
+  padding-right: 42px;
+  padding-left: 32px;
 }
 
 .popular-vendors {
@@ -1294,8 +1360,8 @@ fieldset {
   display: flex;
   align-items: center;
   padding: 25px 0;
-  padding-left: 28px;
   padding-right: 19px;
+  padding-left: 28px;
   background-color: var(--backgraund-popular, lightgray);
 }
 
@@ -1324,15 +1390,15 @@ fieldset {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
   width: 220px;
   height: 145px;
+  margin-bottom: 20px;
   background: var(--wight, white);
   border: 1px solid var(--border-card, gray);
 }
 
 .popular-vendor li:nth-last-child(-n+4) .vendor {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .popular-vendor :nth-child(1) .vendor {
@@ -1348,8 +1414,8 @@ fieldset {
 }
 
 .popular-vendor :nth-child(4) .vendor {
-  padding-bottom: 12px;
   padding-right: 1px;
+  padding-bottom: 12px;
 }
 
 .popular-vendor :nth-child(5) .vendor {
@@ -1390,7 +1456,7 @@ fieldset {
 }
 
 .header-service {
-  margin: 0px;
+  margin: 0;
   margin-bottom: 70px;
 }
 
@@ -1421,15 +1487,15 @@ fieldset {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  margin-right: 80px;
   width: 240px;
+  margin-right: 80px;
 }
 
 .buttons-slider-service:after {
   position: absolute;
-  content: "";
   top: -45px;
   right: 0;
+  
   width: 10px;
   height: 279px;
   background-color: transparent;
@@ -1437,13 +1503,15 @@ fieldset {
   background-repeat: no-repeat;
   background-position: 0 0;
   pointer-events: none;
+  content: "";
 }
 
 .button-slider-service {
   display: block;
   width: 240px;
-  padding: 13px 0 17px 22px;
   min-height: 62px;
+  padding: 13px 0 17px 22px;
+  
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
@@ -1451,9 +1519,9 @@ fieldset {
   text-align: left;
   background-color: var(--nav-blue, darkblue);
   color: var(--wight, white);
+  box-shadow: 0 1px 0 #293449, inset 0 1px 0 #405069;
   border: none;
   outline: none;
-  box-shadow: 0 1px 0 #293449, inset 0 1px 0 #405069;
 }
 
 .button-slider-service:focus, .button-slider-service:hover {
@@ -1478,9 +1546,9 @@ fieldset {
 
 .slide-delivery::after {
   position: absolute;
-  content: "";
-  bottom: 4px;
   right: -1px;
+  bottom: 4px;
+
   width: 468px;
   height: 261px;
   background-color: transparent;
@@ -1488,13 +1556,14 @@ fieldset {
   background-repeat: no-repeat;
   background-position: 0 0;
   pointer-events: none;
+  content: "";
 }
 
 .slide-warranty::after {
   position: absolute;
-  content: "";
-  bottom: 5px;
   right: -8px;
+  bottom: 5px;
+
   width: 389px;
   height: 283px;
   background-color: transparent;
@@ -1502,13 +1571,14 @@ fieldset {
   background-repeat: no-repeat;
   background-position: 0 0;
   pointer-events: none;
+  content: "";
 }
 
 .slide-credit::after {
   position: absolute;
-  content: "";
-  bottom: 2px;
   right: -10px;
+  bottom: 2px;
+
   width: 465px;
   height: 285px;
   background-color: transparent;
@@ -1516,34 +1586,37 @@ fieldset {
   background-repeat: no-repeat;
   background-position: 0 0;
   pointer-events: none;
+  content: "";
 }
 
 .slide-service .slide-title {
   position: relative;
-  margin: 0px;
+  z-index: 1;
+
+  margin: 0;
   font-weight: normal;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
   color: var(--nav-blue, darkblue);
-  z-index: 1;
 }
 
 .slide-service .text {
   position: relative;
+  z-index: 1;
+
   width: 313px;
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
   font-family: var(--second-font, Arial, sans-serif);
   color: var(--text-black, black);
-  z-index: 1;
 }
 
 .slide-credit .design-button {
   min-width: 195px;
-  border-radius: 2px;
   margin-top: 26px;
+  border-radius: 2px;
 }
 
 .slide-service {
@@ -1569,8 +1642,8 @@ fieldset {
 .contact {
   display: flex;
   flex-direction: column;
-  margin-left: auto;
   width: 300px;
+  margin-left: auto;
 }
 
 .bottom-main .title {
@@ -1602,7 +1675,6 @@ fieldset {
 }
 
 .carrier .name-partner::before {
-  content: "";
   display: inline-block;
   width: 25px;
   height: 2px;
@@ -1610,6 +1682,7 @@ fieldset {
   margin-bottom: 5px;
   vertical-align: baseline;
   background-color: var(--basic-red, red);
+  content: "";
 }
 
 .carrier :first-child {
@@ -1644,18 +1717,19 @@ fieldset {
 /* main catalog */
 
 .page-catalog {
-  padding-bottom: 57px;
   display: grid;
-  grid-template-columns: 220px 1fr;
   align-content: start;
+  grid-template-columns: 220px 1fr;
+  padding-bottom: 59px;
 }
 
 .main-title {
   grid-column: 1 / -1;
-  margin: 0px;
+  min-height: 89px;
+  margin: 0;
   margin-bottom: 20px;
   padding: 31px 0 29px 29px;
-  min-height: 89px;
+  
   font-weight: normal;
   font-size: 30px;
   line-height: 30px;
@@ -1677,8 +1751,9 @@ fieldset {
 
 .breadcrumbs .link {
   position: relative;
-  margin-right: 41px;
   display: block;
+  margin-right: 41px;
+  
   font-weight: normal;
   font-size: 13px;
   line-height: 18px;
@@ -1690,7 +1765,6 @@ fieldset {
 
 .breadcrumbs li:first-child .link {
   width: 14px;
-  height: 12px;
   height: 18px;
   background-color: transparent;
   background-image: url("../img/icon-home.svg");
@@ -1706,9 +1780,9 @@ fieldset {
 
 .breadcrumbs-list :not(:last-child) .link::after {
   position: absolute;
-  content: "";
-  bottom: 2px;
   right: -25px;
+  bottom: 2px;
+
   width: 8px;
   height: 12px;
   background-color: transparent;
@@ -1716,14 +1790,16 @@ fieldset {
   background-repeat: no-repeat;
   background-position: 0 0;
   pointer-events: none;
+  content: "";
 }
 
 .filter .main-section-title {
   display: block;
-  margin: 0;
   width: 100%;
   min-height: 38px;
+  margin: 0;
   padding: 10px 18px;
+  
   font-weight: normal;
   font-size: 13px;
   line-height: 18px;
@@ -1761,8 +1837,8 @@ fieldset {
 .range-controls {
   position: relative;
   height: 80px;
-  padding: 39px 20px;
   margin-bottom: 9px;
+  padding: 39px 20px;
   background-color: var(--filter-background, gray);
   border-radius: 4px;
 }
@@ -1782,9 +1858,11 @@ fieldset {
   position: absolute;
   top: 29px;
   left: 0;
+
   width: 20px;
   height: 20px;
   padding: 0;
+  
   border: 8px solid var(--wight, white);
   background-color: var(--tiggle, lightgray);
   border-radius: 50%;
@@ -1808,16 +1886,18 @@ fieldset {
 
 .price-controls .input {
   width: 95px;
+  margin: 0;
   padding: 10px;
-  margin: 0px;
-  text-align: center;
-  border: none;
-  border-radius: 2px;
-  background-color: var(--filter-background);
+  
   font-weight: normal;
   font-size: 17px;
   line-height: 18px;
   font-family: var(--second-font, Arial, sans-serif);
+  text-align: center;
+
+  border: none;
+  border-radius: 2px;
+  background-color: var(--filter-background);
 }
 
 .price-controls .input::-webkit-outer-spin-button,
@@ -1834,15 +1914,17 @@ fieldset {
   position: absolute;
   top: 10px;
   left: 50%;
-  margin-left: -15px;
+
   display: block;
   width: 30px;
   height: 18px;
-  content: "—";
+  margin-left: -15px;
+  
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   text-align: center;
+  content: "—";
 }
 
 .brend {
@@ -1852,12 +1934,13 @@ fieldset {
 
 .brend::before {
   position: absolute;
-  content: "";
   top: -17px;
+
   display: block;
   width: 100%;
   height: 1px;
   background-color: var(--border-button-catalog, darkgray);
+  content: "";
 }
 
 .brend .list-brend {
@@ -1878,19 +1961,20 @@ fieldset {
   position: absolute;
   top: -2px;
   left: 0;
-  content: "";
+
   width: 23px;
   height: 23px;
   border: 2px solid var(--checkbox, darkgray);
   border-radius: 3px;
   opacity: 0.7;
+  content: "";
 }
 
 .input:checked + .checkbox-brend::before {
   position: absolute;
   top: -2px;
-  left: 0px;
-  content: "";
+
+
   width: 26px;
   height: 23px;
   border: none;
@@ -1898,6 +1982,7 @@ fieldset {
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.7;
+  content: "";
 }
 
 .checkbox-brend:hover::before,
@@ -1923,8 +2008,9 @@ fieldset {
 
 .power-supply::before {
   position: absolute;
-  content: "";
   top: -17px;
+
+  content: "";
   display: block;
   width: 100%;
   height: 1px;
@@ -1945,24 +2031,26 @@ fieldset {
   position: absolute;
   top: -3px;
   left: 0;
-  content: "";
+
   width: 25px;
   height: 25px;
   border: 4px solid var(--checkbox, darkgray);
   border-radius: 50%;
   opacity: 0.7;
+  content: "";
 }
 
 .input:checked + .input-radio::after {
   position: absolute;
   top: 5px;
   left: 8px;
-  content: "";
+
   width: 9px;
   height: 9px;
   background-color: var(--checkbox, darkgray);
   border-radius: 50%;
   opacity: 0.7;
+  content: "";
 }
 
 .input-radio:hover::before, 
@@ -1982,9 +2070,9 @@ fieldset {
 }
 
 .filter .catalog-button {
+  width: 100%;
   margin: 0;
   margin-top: 37px;
-  width: 100%;
   border-radius: 0;
 }
 
@@ -1992,7 +2080,7 @@ fieldset {
   position: relative;
   display: block;
   padding-left: 35px;
-  cursor: pointer;
+  
   font-weight: normal;
   font-size: 15px;
   line-height: 19px;
@@ -2000,18 +2088,21 @@ fieldset {
   text-transform: uppercase;
   color: var(--text-black, black);
   background-color: transparent;
+  cursor: pointer;
 }
 
 .catalog-button {
+  min-height: 38px;
   padding: 8px 15px;
+  
   font-weight: normal;
   font-size: 13px;
   line-height: 18px;
-  min-height: 38px;
   font-family: var(--second-font, Arial, sans-serif);
   text-align: center;
   text-transform: uppercase;
   color: var(--text-black, black);
+  
   background-color: var(--wight, white);
   border: 1px solid var(--border-button-catalog, gray);
   border-radius: 2px;
@@ -2036,20 +2127,23 @@ fieldset {
 .sort {
   display: flex;
   flex-wrap: wrap;
-  min-height: 38px;
   align-items: center;
+  min-height: 38px;
   padding: 5px 18px 8px 20px;
+  
   font-weight: normal;
   font-size: 13px;
   line-height: 18px;
   font-family: var(--second-font, Arial, sans-serif);
   text-transform: uppercase;
   color: var(--text-black, black);
+  
   border-radius: 2px;
   background-color: var(--filter-background);
 }
 
 .sort .sort-title {
+  max-width: 200px;
   margin: 0;
   margin-right: auto;
   font-weight: normal;
@@ -2061,9 +2155,8 @@ fieldset {
 .sort .sort-sign {
   display: flex;
   flex-wrap: wrap;
+  max-width: 360px;
   margin-right: 46px;
-  min-width: 354px;
-  max-width: 400px;
 }
 
 .button-sort-text {
@@ -2161,12 +2254,12 @@ fieldset {
 
 .pagination-list :last-child .catalog-button {
   margin: 0;
-  width: 140px;
+  min-width: 140px;
 }
 
 .second-info {
-  padding-top: 66px;
-  padding-bottom: 70px;
+  padding-top: 65px;
+  padding-bottom: 69px;
   background-color: var(--basic-background, lightblue);
 }
 
@@ -2184,7 +2277,6 @@ fieldset {
 .second-info .content p {
   margin: 0;
   padding: 0;
-  padding-top: 1px;
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
@@ -2202,12 +2294,13 @@ fieldset {
   top: 50%;
   left: 50%;
   z-index: 3;
-  margin-left: -470px;
-  margin-top: -225px;
+
   width: 940px;
   height: 449px;
+  margin-left: -470px;
+  margin-top: -225px;
   background-color: var(--basic-grey, gray);
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   overflow: hidden;
 }
 
@@ -2219,21 +2312,23 @@ fieldset {
 }
 
 .popup-map::after {
-  content: "";
   position: absolute;
   top: 0;
   left: 0;
+
   display: inline-block;
   width: 100%;
   height: 7px;
   vertical-align: middle;
   background-color: var(--basic-red, red);
+  content: "";
 }
 
 .popup-map .button-close {
   position: absolute;
   top: 17px;
   right: 10px;
+
   width: 21px;
   height: 21px;
   border: none;
@@ -2249,30 +2344,30 @@ fieldset {
   top: 50%;
   left: 50%;
   z-index: 3;
-  margin-left: -310px;
-  margin-top: -215px;
+
   width: 620px;
   min-height: 430px;
+  margin-top: -215px;
+  margin-left: -310px;
   background-color: var(--wight, white);
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 .write-us::before {
-  content: "";
   position: absolute;
-  top: 0;
-  left: 0;
   display: inline-block;
   width: 100%;
   height: 7px;
   vertical-align: middle;
   background-color: var(--basic-red, red);
+  content: "";
 }
 
 .write-us .button-close {
   position: absolute;
   top: 21px;
   right: 11px;
+
   width: 21px;
   height: 21px;
   border: none;
@@ -2312,17 +2407,17 @@ fieldset {
 
 .form-write-us .top-input {
   display: block;
-  margin-bottom: 13px;
   width: 220px;
   height: 38px;
+  margin-bottom: 13px;
   padding-left: 12px
 }
 
 .form-write-us .bottom-input {
   display: block;
-  padding: 6px 12px;
   width: 460px;
   min-height: 114px;
+  padding: 6px 12px;
   resize: none;
 }
 
@@ -2338,48 +2433,52 @@ fieldset {
 }
 
 .message-buy {
-  display: flex;
-  flex-direction: column;
   position: fixed;
   top: 50%;
   left: 50%;
   z-index: 3;
-  margin-left: -310px;
-  margin-top: -141px;
+
+  display: flex;
+  flex-direction: column;
   width: 620px;
   min-height: 282px;
+  margin-top: -141px;
+  margin-left: -310px;
   background-color: var(--wight, white);
-  box-shadow: 0px 20px 40px var(--shadow-message-buy, darkgray);
+  box-shadow: 0 20px 40px var(--shadow-message-buy, darkgray);
 }
 
 .message-buy::before {
-  content: "";
   position: absolute;
   top: 0;
   left: 0;
+
   display: inline-block;
   width: 100%;
   height: 7px;
   vertical-align: middle;
   background-color: var(--basic-red, red);
+  content: "";
 }
 
 .message-buy::after {
   position: absolute;
-  content: "";
   top: 55px;
   left: 81px;
+
   width: 66px;
   height: 66px;
   background-image: url("../img/icon-mark.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  content: "";
 }
 
 .message-buy .button-close {
   position: absolute;
   top: 18px;
   right: 11px;
+
   width: 21px;
   height: 21px;
   border: none;
@@ -2392,14 +2491,15 @@ fieldset {
 
 .text-message {
   width: 100%;
-  text-align: center;
+  margin: 0;
   padding-top: 73px;
   padding-bottom: 67px;
-  margin: 0px;
+  
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
   font-family: var(--first-font, Arial, sans-serif);
+  text-align: center;
 }
 
 .buttons-panel {
