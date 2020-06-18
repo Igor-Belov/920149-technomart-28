@@ -1686,9 +1686,11 @@ fieldset {
 
 .breadcrumbs-list :last-child .link {
   margin-left: 2px;
+  pointer-events: none;
+  cursor: default;
 }
 
-.breadcrumbs .link[href]::after {
+.breadcrumbs-list :not(:last-child) .link::after {
   position: absolute;
   content: "";
   bottom: 2px;
@@ -2106,6 +2108,8 @@ fieldset {
 .sort-active {
   color: var(--basic-red, red);
   border-bottom: none;
+  pointer-events: none;
+  cursor: default;
 }
 
 .catalog-product {
@@ -2134,9 +2138,11 @@ fieldset {
   margin-right: 9px;
 }
 
-.pagination .catalog-button:not([href]) {
+.pagination .catalog-button.active {
   color: var(--wight, white);
   background-color: var(--basic-red, red);
+  pointer-events: none;
+  cursor: default;
 }
 
 .pagination-list :last-child .catalog-button {
