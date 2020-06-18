@@ -187,22 +187,24 @@ fieldset {
   background-color: transparent;
 }
 
-.icon-search::before {
+.icon-search {
   position: absolute;
   top: 12px;
   left: 17px;
   content: "";
   width: 17px;
   height: 17px;
-  background-image: url("../img/icon-search.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  opacity: 0.3;
+  margin: 0;
+  padding: 0;
   cursor: text;
+} 
+
+.input-search:hover ~ .icon-search path {
+  fill: var(--wight, white);
 }
 
-.icon-search:hover::before {
-  opacity: 1;
+.input-search:focus ~ .icon-search path {
+  fill: var(--basic-red, red);
 }
 
 .input-search::-moz-placeholder {
@@ -1109,11 +1111,13 @@ fieldset {
 }
 
 .product-page:focus .image-box {
-  display: none;
+  z-index: 0;
+  opacity: 0.3;
 }
 
 .card-product:hover .image-box {
-  display: none;
+  z-index: 0;
+  opacity: 0.3;
 }
 
 .button-buy:focus ~ .image-box,
@@ -1123,6 +1127,7 @@ fieldset {
 
 .button-buy {
   position: relative;
+  z-index: 1;
   display: block;
   width: 135px;
   padding: 10px 0 10px 52px;
@@ -1162,6 +1167,8 @@ fieldset {
 }
 
 .button-bookmark {
+  position: relative;
+  z-index: 1;
   display: block;
   width: 135px;
   padding: 8px 10px 6px 10px;
