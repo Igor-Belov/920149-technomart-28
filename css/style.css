@@ -194,7 +194,7 @@ fieldset {
   content: "";
   width: 17px;
   height: 17px;
-  background-image: url("img/icon-search.svg");
+  background-image: url("../img/icon-search.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
@@ -241,7 +241,7 @@ fieldset {
   content: "";
   width: 14px;
   height: 16px;
-  background-image: url("img/icon-bookmark.svg");
+  background-image: url("../img/icon-bookmark.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
@@ -258,7 +258,7 @@ fieldset {
   content: "";
   width: 15px;
   height: 15px;
-  background-image: url("img/icon-cart.svg");
+  background-image: url("../img/icon-cart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
@@ -354,7 +354,7 @@ fieldset {
   content: "";
   width: 19px;
   height: 19px;
-  background-image: url("img/icon-phone.svg");
+  background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -388,7 +388,7 @@ fieldset {
   left: 19px;
   width: 20px;
   height: 17px;
-  background-image: url("img/icon-login.svg");
+  background-image: url("../img/icon-login.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -446,7 +446,7 @@ fieldset {
   left: 15px;
   width: 20px;
   height: 18px;
-  background-image: url("img/icon-user.svg");
+  background-image: url("../img/icon-user.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -457,7 +457,7 @@ fieldset {
   right: 18px;
   width: 20px;
   height: 17px;
-  background-image: url("img/icon-logout.svg");
+  background-image: url("../img/icon-logout.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -716,7 +716,7 @@ fieldset {
 
 .social-footer-site .link.vc {
   display: block;
-  background-image: url("img/icon-vk.svg");
+  background-image: url("../img/icon-vk.svg");
   background-repeat: no-repeat;
   background-position: 8px 13px;
   background-size: 26px 15px;
@@ -724,7 +724,7 @@ fieldset {
 
 .social-footer-site .link.fb {
   display: block;
-  background-image: url("img/icon-fb.svg");
+  background-image: url("../img/icon-fb.svg");
   background-repeat: no-repeat;
   background-position: 14px 10px;
   background-size: 12px 22px;
@@ -732,7 +732,7 @@ fieldset {
 
 .social-footer-site .link.instagramm {
   display: block;
-  background-image: url("img/icon-insta.svg");
+  background-image: url("../img/icon-insta.svg");
   background-repeat: no-repeat;
   background-position: 10px 10px;
   background-size: 21px 21px;
@@ -827,7 +827,7 @@ fieldset {
   content: "";
   width: 70px;
   height: 70px;
-  background-image: url("img/new.svg");
+  background-image: url("../img/new.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -859,7 +859,7 @@ fieldset {
 
 .tile-material {
   background-color: var(--special-ylellow, yellow);
-  background-image: url("img/icon-1.svg");
+  background-image: url("../img/icon-1.svg");
   background-repeat: no-repeat;
   background-position: 213px 31px;
   background-size: 44px 65px;
@@ -867,7 +867,7 @@ fieldset {
 
 .tile-tools {
   background-color: var(--special-blue, lightblue);
-  background-image: url("img/icon-2.svg");
+  background-image: url("../img/icon-2.svg");
   background-repeat: no-repeat;
   background-position: 194px 34px;
   background-size: 75px 61px;
@@ -875,7 +875,7 @@ fieldset {
 
 .tile-technics {
   background-color: var(--special-lilac, purple);
-  background-image: url("img/icon-3.svg");
+  background-image: url("../img/icon-3.svg");
   background-repeat: no-repeat;
   background-position: 191px 31px;
   background-size: 78px 62px;
@@ -891,7 +891,7 @@ fieldset {
 
 .tile-delivery {
   background-color: var(--second-special-ylellow, yellow);
-  background-image: url("img/icon-5.svg");
+  background-image: url("../img/icon-5.svg");
   background-repeat: no-repeat;
   background-position: 191px 32px;
   background-size: 78px 63px;
@@ -952,7 +952,7 @@ fieldset {
   width: 22px;
   height: 39px;
   background-color: transparent;
-  background-image: url("img/icon-left.svg");
+  background-image: url("../img/icon-left.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -960,7 +960,7 @@ fieldset {
 .management-slider-promo-arrows .right-arrow-button {
   left: auto;
   right: 20px;
-  background-image: url("img/icon-right.svg");
+  background-image: url("../img/icon-right.svg");
 }
 
 .management-slider-promo-round {
@@ -1030,14 +1030,14 @@ fieldset {
 
 .slide-drill {
   background-color: var(--basic-grey, gray);
-  background-image: url("img/slide-drill.jpg");
+  background-image: url("../img/slide-drill.jpg");
   background-position: top center;
   background-repeat: no-repeat;
 }
 
 .slide-perforator {
   background-color: var(--basic-grey, gray);
-  background-image: url("img/slide-perforator.jpg");
+  background-image: url("../img/slide-perforator.jpg");
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -1146,7 +1146,7 @@ fieldset {
   left: 30px;
   width: 15px;
   height: 15px;
-  background-image: url("img/icon-cart.svg");
+  background-image: url("../img/icon-cart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
@@ -1251,27 +1251,27 @@ fieldset {
   text-align: center;
   text-transform: uppercase;
   color: var(--wight, white);
-  background-image: url("img/red-button.svg");
+  background-image: url("../img/red-button.svg");
   background-size: 100% 100%;
   background-position: 6px 0;
   background-repeat: no-repeat;
 }
 
-.image-product[src="img/snippet-32961.png"] {
+.image-product[src="../img/snippet-32961.png"] {
   width: 100%;
   margin-top: 4px;
   padding-right: 17px;
   padding-left: 15px;
 }
 
-.image-product[src="img/snippet-18927.png"] {
+.image-product[src="../img/snippet-18927.png"] {
   width: 100%;
   padding-left: 38px;
   padding-right: 52px;
   padding-top: 28px;
 }
 
-.image-product[src="img/snippet-945.png"] {
+.image-product[src="../img/snippet-945.png"] {
   width: 100%;
   padding-left: 32px;
   padding-right: 42px;
@@ -1426,7 +1426,7 @@ fieldset {
   width: 10px;
   height: 279px;
   background-color: transparent;
-  background-image: url("img/layer118.png");
+  background-image: url("../img/layer118.png");
   background-repeat: no-repeat;
   background-position: 0 0;
   pointer-events: none;
@@ -1477,7 +1477,7 @@ fieldset {
   width: 468px;
   height: 261px;
   background-color: transparent;
-  background-image: url("img/layer131_1.png");
+  background-image: url("../img/layer131_1.png");
   background-repeat: no-repeat;
   background-position: 0 0;
   pointer-events: none;
@@ -1491,7 +1491,7 @@ fieldset {
   width: 389px;
   height: 283px;
   background-color: transparent;
-  background-image: url("img/layer130-2.png");
+  background-image: url("../img/layer130-2.png");
   background-repeat: no-repeat;
   background-position: 0 0;
   pointer-events: none;
@@ -1505,7 +1505,7 @@ fieldset {
   width: 465px;
   height: 285px;
   background-color: transparent;
-  background-image: url("img/layer119-3.png");
+  background-image: url("../img/layer119-3.png");
   background-repeat: no-repeat;
   background-position: 0 0;
   pointer-events: none;
@@ -1686,7 +1686,7 @@ fieldset {
   height: 12px;
   height: 18px;
   background-color: transparent;
-  background-image: url("img/icon-home.svg");
+  background-image: url("../img/icon-home.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1705,7 +1705,7 @@ fieldset {
   width: 8px;
   height: 12px;
   background-color: transparent;
-  background-image: url("img/icon-right-small.svg");
+  background-image: url("../img/icon-right-small.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   pointer-events: none;
@@ -1887,7 +1887,7 @@ fieldset {
   width: 26px;
   height: 23px;
   border: none;
-  background-image: url("img/checkbox-on.svg");
+  background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.7;
@@ -2231,7 +2231,7 @@ fieldset {
   height: 21px;
   border: none;
   background-color: transparent;
-  background-image: url("img/icon-close.svg");
+  background-image: url("../img/icon-close.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   cursor: pointer;
@@ -2270,7 +2270,7 @@ fieldset {
   height: 21px;
   border: none;
   background-color: transparent;
-  background-image: url("img/icon-close.svg");
+  background-image: url("../img/icon-close.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   cursor: pointer;
@@ -2364,7 +2364,7 @@ fieldset {
   left: 81px;
   width: 66px;
   height: 66px;
-  background-image: url("img/icon-mark.svg");
+  background-image: url("../img/icon-mark.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -2377,7 +2377,7 @@ fieldset {
   height: 21px;
   border: none;
   background-color: transparent;
-  background-image: url("img/icon-close.svg");
+  background-image: url("../img/icon-close.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   cursor: pointer;
