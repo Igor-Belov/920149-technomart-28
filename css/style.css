@@ -2167,14 +2167,20 @@ fieldset {
   background-color: transparent;
 }
 
-.second-info .content {
-  margin: 0px;
+.second-info .content p {
+  margin: 0;
+  padding: 0;
+  padding-top: 1px;
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
   font-family: var(--second-font, Arial, sans-serif);
   color: var(--text-black, black);
   background-color: transparent;
+}
+
+.content :first-child {
+  padding: 0; 
 }
 
 .popup-map {
