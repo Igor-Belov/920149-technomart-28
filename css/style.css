@@ -215,6 +215,7 @@ fieldset {
 
 .input-search::-moz-placeholder {
   color: var(--wight, white);
+  opacity: 1;
 }
 
 .input-search::-webkit-input-placeholder {
@@ -491,7 +492,7 @@ fieldset {
 }
 
 .output-name-user .link-name-user:active path {
-  fill: var(--basic-greylight, gray)
+  fill: var(--basic-greylight, gray);
 }
 
 .output-name-user .log-out:hover path,
@@ -557,17 +558,23 @@ fieldset {
 .nav-header-site {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
+  padding-right: 19px;
+  padding-left: 24px;
+
+  box-shadow: inset 0 -5px 0 var(--nav-shadow, darkblue);
+  background-color: var(--nav-blue, blue);
 }
 
 .nav-header-site .nav-item {
   flex-grow: 1;
+flex-shrink: 0;
 }
 
 .nav-header-site .link {
   display: block;
-  padding: 17px 25px 19px 25px;
+  padding: 17px 28px 19px 28px;
   
   font-weight: normal;
   font-size: 18px;
@@ -579,12 +586,14 @@ fieldset {
   background-color: var(--nav-blue, blue);
 }
 
-.nav-header-site :first-child .link {
-  padding-left: 50px;
+.nav-header-site :nth-child(4) .link {
+  padding-right: 26px;
+  padding-left: 30px;
 }
 
-.nav-header-site :last-child .link {
-  padding-right: 44px;
+.nav-header-site :nth-child(5) .link {
+  padding-right: 26px;
+  padding-left: 30px;
 }
 
 .nav-header-site .link[href]:focus,
@@ -625,6 +634,10 @@ fieldset {
   background-color: var(--basic-red, red);
 }
 
+.logo-footer-site[href]:active {
+  background-color: var(--error, darkred);
+}
+
 .logo-footer-site::after {
   position: absolute;
   bottom: 0;
@@ -635,6 +648,10 @@ fieldset {
   height: 5px;
   background-color: var(--logo-shadow, darkred);
   content: "";
+}
+
+.logo-footer-site[href]:active::after {
+  background-color: var(--logo-shadow-active, darkred);
 }
 
 .adress-footer-site {
@@ -868,7 +885,7 @@ fieldset {
   position: absolute;
   top: 1px;
   right: 1px;
-  z-index: 1;
+  z-index: 2;
 
   width: 70px;
   height: 70px;
@@ -1164,19 +1181,15 @@ fieldset {
   object-fit: contain;
 }
 
-.product-page:focus .image-box {
-  z-index: 0;
-  opacity: 0.3;
-}
-
 .card-product:hover .image-box {
   z-index: 0;
-  opacity: 0.3;
+  opacity: 0.1;
 }
 
 .button-buy:focus ~ .image-box,
 .button-bookmark:focus ~ .image-box {
-  display: none;
+  z-index: 0;
+  opacity: 0.1;
 }
 
 .button-buy {
@@ -1811,6 +1824,7 @@ fieldset {
 }
 
 .section-title {
+  width: 100%;
   margin: 0;
   padding: 0;
   font-weight: bold;
@@ -1825,7 +1839,7 @@ fieldset {
   border: none;
 }
 
-.style-fieldset.price {
+.form-filter {
   margin-top: 12px;
 }
 
@@ -1882,16 +1896,19 @@ fieldset {
   position: relative;
   display: flex;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .price-controls .input {
   width: 95px;
+  height: 38px;
   margin: 0;
   padding: 10px;
   
   font-weight: normal;
   font-size: 17px;
-  line-height: 18px;
+  line-height: 17px;
   font-family: var(--second-font, Arial, sans-serif);
   text-align: center;
 
@@ -1912,27 +1929,30 @@ fieldset {
 
 .price-controls::after {
   position: absolute;
-  top: 10px;
+  bottom: 0px;
   left: 50%;
 
-  display: block;
+  display: inline-block;
   width: 30px;
   height: 18px;
   margin-left: -15px;
   
   font-weight: normal;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 1px;
   text-align: center;
   content: "—";
 }
 
 .brend {
-  position: relative;
   margin-top: 42px;
 }
 
-.brend::before {
+.style-fieldset:not(:first-child) .section-title {
+  position: relative;
+}
+
+.style-fieldset .section-title::before {
   position: absolute;
   top: -17px;
 
@@ -2002,19 +2022,7 @@ fieldset {
 }
 
 .power-supply {
-  position: relative;
   margin-top: 45px;
-}
-
-.power-supply::before {
-  position: absolute;
-  top: -17px;
-
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  background-color: var(--border-button-catalog, darkgray);
 }
 
 .list-power-supply {
@@ -2094,7 +2102,7 @@ fieldset {
 .catalog-button {
   display: block;
   min-height: 38px;
-  padding: 10px 15px 6px 15px;
+  padding: 8px 15px 8px 15px;
   
   font-weight: normal;
   font-size: 13px;
@@ -2229,7 +2237,7 @@ fieldset {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: max-content;
   grid-row-gap: 18px;
-  grid-column-gap: 20px
+  grid-column-gap: 20px;
 }
 
 .pagination {
@@ -2411,7 +2419,7 @@ fieldset {
   width: 220px;
   height: 38px;
   margin-bottom: 13px;
-  padding-left: 12px
+  padding-left: 12px;
 }
 
 .form-write-us .bottom-input {
