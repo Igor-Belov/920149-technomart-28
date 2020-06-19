@@ -2092,8 +2092,9 @@ fieldset {
 }
 
 .catalog-button {
+  display: block;
   min-height: 38px;
-  padding: 8px 15px;
+  padding: 10px 15px 6px 15px;
   
   font-weight: normal;
   font-size: 13px;
