@@ -179,6 +179,15 @@ fieldset {
   flex-grow: 1;
 }
 
+.input-search::-moz-placeholder {
+  color: var(--wight, white);
+  opacity: 1;
+}
+
+.input-search::-webkit-input-placeholder {
+  color: var(--wight, white);
+}
+
 .input-search {
   width: 100%;
   height: 100%;
@@ -189,6 +198,11 @@ fieldset {
   outline: none;
   border: none;
   background-color: transparent;
+}
+
+.input-search:focus {
+  color: var(--text-black, black);
+  background-color: var(--wight, white);
 }
 
 .icon-search {
@@ -211,20 +225,6 @@ fieldset {
 
 .input-search:focus ~ .icon-search path {
   fill: var(--basic-red, red);
-}
-
-.input-search::-moz-placeholder {
-  color: var(--wight, white);
-  opacity: 1;
-}
-
-.input-search::-webkit-input-placeholder {
-  color: var(--wight, white);
-}
-
-.input-search:focus {
-  color: var(--text-black, black);
-  background-color: var(--wight, white);
 }
 
 .trade-header-site .link {
@@ -1337,6 +1337,7 @@ flex-shrink: 0;
   text-transform: uppercase;
   color: var(--wight, white);
   
+  background-color: var(--basic-red, red);
   background-image: url("../img/red-button.svg");
   background-size: 100% 100%;
   background-position: 0 0;
@@ -1900,6 +1901,16 @@ flex-shrink: 0;
   padding: 0;
 }
 
+.price-controls .input::-webkit-outer-spin-button,
+.price-controls .input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.price-controls .input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .price-controls .input {
   width: 95px;
   height: 38px;
@@ -1915,16 +1926,6 @@ flex-shrink: 0;
   border: none;
   border-radius: 2px;
   background-color: var(--filter-background);
-}
-
-.price-controls .input::-webkit-outer-spin-button,
-.price-controls .input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.price-controls .input[type=number] {
-  -moz-appearance: textfield;
 }
 
 .price-controls::after {
@@ -2006,18 +2007,18 @@ flex-shrink: 0;
 }
 
 .checkbox-brend:hover::before,
-.checkbox-brend:focus::before,
-.input:checked + .checkbox-brend:hover::after,
-.input:checked + .checkbox-brend:focus::after {
+.input:focus + .checkbox-brend::before,
+.input:checked + .checkbox-brend:hover::before,
+.input:checked:focus + .checkbox-brend::before {
   opacity: 1;
+}
+
+.input:disabled + .checkbox-brend {
+  opacity: 0.5;
 }
 
 .input:disabled + .checkbox-brend::before,
 .input:disabled + .checkbox-brend::after {
-  opacity: 0.5;
-}
-
-.input:disabled + .checkbox-brend {
   opacity: 0.5;
 }
 
@@ -2062,9 +2063,9 @@ flex-shrink: 0;
 }
 
 .input-radio:hover::before, 
-.input-radio:focus::before, 
+.input:focus + .input-radio::before, 
 .input:checked + .input-radio:hover::after, 
-.input:checked + .input-radio:focus::after {
+.input:checked:focus + .input-radio::after {
   opacity: 1;
 }
 
@@ -2102,7 +2103,7 @@ flex-shrink: 0;
 .catalog-button {
   display: block;
   min-height: 38px;
-  padding: 8px 15px 8px 15px;
+  padding: 9px 15px 9px 15px;
   
   font-weight: normal;
   font-size: 13px;
