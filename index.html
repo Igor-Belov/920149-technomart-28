@@ -76,16 +76,16 @@
             <a class="button-tile" href="#">На все случаи</a>
           </section>
           <div class="slider-promo">
-            <div class="management-slider-promo">
+            <div class="management-slider-promo management-slider-promo-off">
               <div class="management-slider-promo-arrows">
                 <button class="button left-arrow-button" type="button" aria-label="предыдущий слайд"></button>
                 <button class="button right-arrow-button" type="button" aria-label="следующий слайд"></button></div>
               <div class="management-slider-promo-round">
-                <button class="button first-round-button " type="button" aria-label="первый слайд"></button>
-                <button class="button second-round-button current" type="button" aria-label="второй слайд"></button>
+                <button class="button first-round-button" type="button" aria-label="первый слайд"></button>
+                <button class="button second-round-button" type="button" aria-label="второй слайд"></button>
               </div>
             </div>
-            <div class="slide-promo slide-drill">
+            <div class="slide-promo slide-drill slide-current">
               <h3 class="title">Дрели</h3>
               <p class="description">Cоседям на радость!</p>
               <a class=design-button href="catalog.html">Открыть каталог</a>
@@ -245,18 +245,18 @@
           </p>
         </div>
         <div class="service-slider">
-          <ul class="buttons-slider-service">
-            <li><button class="button-slider-service button-carrent" type="button">Доставка</button></li>
+          <ul class="buttons-slider-service buttons-slider-service-off">
+            <li><button class="button-slider-service" type="button">Доставка</button></li>
             <li><button class="button-slider-service" type="button">Гарантия</button></li>
             <li><button class="button-slider-service" type="button">Кредит</button></li>
           </ul>
           <ul class="slides-service">
-            <li class="slide-service slide-delivery slide-carrent">
+            <li class="slide-service slide-delivery slide-current">
               <h3 class="slide-title">Доставка</h3>
               <p class="text">Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно
                 бесплатно!<br> Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
             </li>
-            <li class="slide-service slide-warranty">
+            <li class="slide-service slide-warranty slide-current">
               <h3 class="slide-title">Гарантия</h3>
               <p class="text">Если купленный у нас товар поломается или заискрит, а также в случае пожара,
                 спровоцированного его
@@ -264,7 +264,7 @@
                 уж
                 восстановите как-нибудь сами.</p>
             </li>
-            <li class="slide-service slide-credit">
+            <li class="slide-service slide-credit  slide-current">
               <h3 class="slide-title">Кредит</h3>
               <p class="text">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
               <a class="design-button" href="#">Отправить заявку</a>
@@ -391,6 +391,7 @@
   </section>
 
   <section class="message-buy popup-off">
+    <div class="message-buy-content">
     <h2 class="visually-hidden">Сообщение о товаре</h2>
     <p class="text-message">Товар добавлен в корзину!</p>
     <div class="buttons-panel">
@@ -398,6 +399,7 @@
       <a class="link design-button" href="#">Продолжить покупки</a>
     </div>
     <button class="button-close" type="button" aria-label="закрыть сообщение"></button>
+  </div>
   </section>
   
   <script src="js/script.js"></script>
