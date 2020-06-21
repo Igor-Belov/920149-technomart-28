@@ -235,9 +235,14 @@ fieldset {
   padding-bottom: 9px;
 }
 
+.trade-header-site .link:focus {
+  outline: none;
+}
+
 .trade-header-site .active {
   background-color: var(--basic-red, red);
 }
+
 
 .link-bookmarked {
   padding-left: 43px;
@@ -301,6 +306,7 @@ fieldset {
 .link-arrange:focus,
 .link-arrange:hover {
   background-color: var(--success, green);
+  outline: none;
 }
 
 .link-arrange:active {
@@ -440,6 +446,7 @@ fieldset {
 .entrace .link:hover,
 .entrace .link:focus {
   color: var(--basic-red, red);
+  outline: none;
 }
 
 .entrace .link:active {
@@ -486,6 +493,10 @@ fieldset {
   background-position: 0 0;
 }
 
+.output-name-user .link-name-user:focus {
+  outline: none;
+}
+
 .output-name-user .link-name-user:focus path,
 .output-name-user .link-name-user:hover path {
   fill: var(--basic-grey, darkgray);
@@ -493,6 +504,10 @@ fieldset {
 
 .output-name-user .link-name-user:active path {
   fill: var(--basic-greylight, gray);
+}
+
+.output-name-user .log-out:focus {
+  outline: none;
 }
 
 .output-name-user .log-out:hover path,
@@ -545,6 +560,7 @@ fieldset {
 .nav-person .link:hover,
 .nav-person .link:focus {
   color: var(--basic-red, red);
+  outline: none;
 }
 
 .nav-person .link:active {
@@ -599,6 +615,7 @@ flex-shrink: 0;
 .nav-header-site .link[href]:focus,
 .nav-header-site .link[href]:hover {
   background-color: var(--nav-shadow);
+  outline: none;
 }
 
 .nav-header-site .link[href]:active {
@@ -687,6 +704,7 @@ flex-shrink: 0;
 .nav-footer-site .link[href]:hover,
 .nav-footer-site .link[href]:focus {
   text-decoration: underline;
+  outline: none;
 }
 
 .nav-footer-site .link[href]:active {
@@ -725,6 +743,7 @@ flex-shrink: 0;
 .trade-footer-site .link:hover,
 .trade-footer-site .link:focus {
   text-decoration: underline;
+  outline: none;
 }
 
 .trade-footer-site .link:active {
@@ -771,6 +790,7 @@ flex-shrink: 0;
 .social-footer-site .link:focus,
 .social-footer-site .link:active {
   background-color: var(--basic-red, red);
+  outline: none;
 }
 
 .social-footer-site .link.vc {
@@ -827,6 +847,7 @@ flex-shrink: 0;
 .feedback .link:hover,
 .feedback .link:focus {
   text-decoration: underline;
+  outline: none;
 }
 
 .feedback .link:active {
@@ -914,8 +935,10 @@ flex-shrink: 0;
   background-color: var(--tile-none, red);
 }
 
-.info-tile .button-tile:hover, .info-tile .button-tile:focus {
+.info-tile .button-tile:hover, 
+.info-tile .button-tile:focus {
   background-color: var(--tile-hover, red);
+  outline: none;
 }
 
 .info-tile .button-tile:active {
@@ -1093,6 +1116,7 @@ flex-shrink: 0;
 .design-button:focus,
 .design-button:hover {
   background-color: var(--design-button-focus, darkred);
+  outline: none;
 }
 
 .design-button:active {
@@ -1229,6 +1253,7 @@ flex-shrink: 0;
 .button-buy:focus,
 .button-buy:hover {
   background-color: var(--success, lightgreen);
+  outline: none;
 }
 
 .button-buy:active {
@@ -1259,6 +1284,7 @@ flex-shrink: 0;
 .button-bookmark:focus,
 .button-bookmark:hover {
   border-color: var(--nav-blue, blue);
+  outline: none;
 }
 
 .button-bookmark:active {
@@ -1453,6 +1479,7 @@ flex-shrink: 0;
 .popular-vendor .vendor:focus,
 .popular-vendor .vendor:hover {
   box-shadow: 0 4px 20px var(--card-shadow, lightgray);
+  outline: none;
 }
 
 .popular-vendor .vendor:active {
@@ -2192,6 +2219,10 @@ flex-shrink: 0;
   margin-right: 21px;
 }
 
+.sort .button-sort-icon:focus {
+  outline: none;
+}
+
 .sort .button-sort-icon:focus path,
 .sort .button-sort-icon:hover path {
   fill: var(--basic-grey, darkgray);
@@ -2212,6 +2243,7 @@ flex-shrink: 0;
 .button-sort-text:hover {
   color: var(--text-black, black);
   border-bottom-style: solid;
+  outline: none;
 }
 
 .sort-active {
@@ -2219,6 +2251,12 @@ flex-shrink: 0;
   border-bottom: none;
   pointer-events: none;
   cursor: default;
+}
+
+.sort-active:focus {
+  color: var(--basic-red, red);
+  border-bottom: none;
+  outline: none;
 }
 
 .catalog-product {
@@ -2297,9 +2335,9 @@ flex-shrink: 0;
   left: 50%;
   z-index: 3;
 
-  width: 940px;
+  width: 943px;
   height: 449px;
-  margin-left: -470px;
+  margin-left: -471px;
   margin-top: -225px;
   background-color: var(--basic-grey, gray);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
@@ -2521,4 +2559,8 @@ flex-shrink: 0;
   margin-left: 10px;
   color: var(--text-black, black);
   background-color: var(--wight, white);
+}
+
+.popup-off {
+  display: none;
 }

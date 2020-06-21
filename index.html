@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="page-body">
+<body class="index-page page-body">
   <header class="header-site">
     <div class="top-header-site">
       <div class="wrapper">
@@ -119,7 +119,7 @@
           <h2 class="title">Популярные товары:</h2>
           <a class="design-button" href="catalog.html">Все популярные товары</a>
         </div>
-        <ul class="popular-product">
+        <ul class="event-target popular-product">
           <li class="item-product">
             <article class=" card-product">
               <h3 class="title">Перфоратор BOSCH<br>BFG 9000</h3>
@@ -296,7 +296,7 @@
         <section class="contact">
           <h2 class="title">Контакты</h2>
           <p class="text">Вы можете забрать товар сами,<br>заехав в наш офис:</p>
-          <a class="map" href="img/lay5.png">
+          <a class="map" href="img/bigmap.png">
             <img src="img/lay5.png" width="300" height="158" alt="Карта с адресом ул. Б. Конюшенная, д. 19/8">
           </a>
           <a class="design-button" href="#">
@@ -364,7 +364,7 @@
     </div>
   </footer>
 
-  <section class="write-us visually-hidden">
+  <section class="write-us popup-off">
     <h2 class="visually-hidden">Напишите нам</h2>
     <form class="form-write-us" action="https://echo.htmlacademy.ru" method="post">
       <ul class="list-input">
@@ -374,7 +374,7 @@
             <input class="input top-input" type="email" name="email" placeholder="email@example.com" required></label>
         </li>
         <li><label>Текст письма:
-            <textarea class="input bottom-input" name="textarea" placeholder="В свободной форме"></textarea></label>
+            <textarea class="input bottom-input" name="textarea" placeholder="В свободной форме" required></textarea></label>
         </li>
       </ul>
       <div class="bottom-write-us">
@@ -384,12 +384,23 @@
     <button class="button-close" type="button" aria-label="закрыть окно обратной связи"></button>
   </section>
 
-  <section class="popup-map visually-hidden">
+  <section class="popup-map popup-off">
     <h2 class="visually-hidden">Карта из всплывающего окна</h2>
-    <img class="image-map" src="img/bigmap.png" width="943" height="449" alt="Карта с адрессом: ул. Б. Конюшенная, д. 19/8">
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa229b84eeddeccee6f63ae7c0e980bdbd6ffe06c9e4dd75a64b594db324dc15f&amp;source=constructor" width="943" height="449" frameborder="0"></iframe>    <img class="image-map" src="img/bigmap.png" width="943" height="449" alt="Карта с адрессом Техномарта: ул. Б. Конюшенная, д. 19/8">
     <button class="button-close" type="button" aria-label="закрыть окно с картой"></button>
   </section>
 
+  <section class="message-buy popup-off">
+    <h2 class="visually-hidden">Сообщение о товаре</h2>
+    <p class="text-message">Товар добавлен в корзину!</p>
+    <div class="buttons-panel">
+      <a class="link design-button" href="#">Оформить заказ</a>
+      <a class="link design-button" href="#">Продолжить покупки</a>
+    </div>
+    <button class="button-close" type="button" aria-label="закрыть сообщение"></button>
+  </section>
+  
+  <script src="js/script.js"></script>
 </body>
 
 </html>
