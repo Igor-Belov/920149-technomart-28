@@ -12,6 +12,9 @@ var fname = document.querySelector(".write-us li:first-child .input");
 var femail = document.querySelector(".write-us li:nth-child(2) .input");
 var fmessage = document.querySelector(".write-us li:nth-child(3) .input");
 var form_write_us = document.querySelector(".form-write-us");
+var form_buy_button1 = document.querySelector(".buttons-panel .link:nth-child(1)");
+var form_buy_button2 = document.querySelector(".buttons-panel .link:nth-child(2)");
+
 
 if (type_page.classList.contains("index-page")) {
 
@@ -61,7 +64,7 @@ if (type_page.classList.contains("index-page")) {
     if (evt.keyCode === 27) {
       if (popup_write_us.classList.contains("popup-on")) {
         evt.preventDefault();
-        popup_write_us.classList.add("remove-show");
+        popup_write_us.classList.remove("modal-show");
         popup_write_us.classList.remove("modal-error");
         popup_write_us.classList.remove("popup-on");
       }
@@ -240,3 +243,15 @@ button_close_message_buy.addEventListener("click", function () {
   message_buy.classList.remove("modal-show");
   message_buy.classList.remove("popup-on");
 }); 
+
+form_buy_button1.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  message_buy.classList.remove("modal-show");
+  message_buy.classList.remove("popup-on");
+});
+
+form_buy_button2.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  message_buy.classList.remove("modal-show");
+  message_buy.classList.remove("popup-on");
+});

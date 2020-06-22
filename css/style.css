@@ -1085,6 +1085,15 @@ flex-shrink: 0;
   margin-right: 10px;
 }
 
+.management-slider-promo-round .button:focus {
+  outline: 3px solid black;
+  outline-offset: 2px;
+}
+
+.management-slider-promo-round .button:active {
+  outline: none;
+}
+
 .management-slider-promo-round .button.current {
   width: 10px;
   height: 10px;
@@ -1575,6 +1584,8 @@ flex-shrink: 0;
 }
 
 .button-slider-service:focus, .button-slider-service:hover {
+  border: none;
+  outline: none;
   background-color: var(--nav-shadow, darkblue);
 }
 
@@ -2451,6 +2462,28 @@ flex-shrink: 0;
   margin-top: 46px;
 }
 
+.write-us .input::-moz-placeholder {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 30px;
+  font-family: var(--second-font, Arial, sans-serif);
+  color: var(--old-price, gray);
+  opacity: 1;
+}
+
+.write-us .bottom-input::-moz-placeholder {
+  line-height: 24px;
+}
+
+.write-us .input::-webkit-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  font-family: var(--second-font, Arial, sans-serif);
+  color: var(--old-pricet, gray);
+}
+
 .write-us .input {
   margin: 0;
   margin-top: 11px;
@@ -2462,15 +2495,17 @@ flex-shrink: 0;
   display: block;
   width: 220px;
   height: 38px;
+  vertical-align: top;
   margin-bottom: 13px;
-  padding-left: 12px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .form-write-us .bottom-input {
   display: block;
   width: 460px;
   min-height: 114px;
-  padding: 6px 12px;
+  padding: 4px 10px;
   resize: none;
 }
 
@@ -2584,11 +2619,11 @@ flex-shrink: 0;
 
 .modal-show {
   display: block;
-  animation: bounce 0.6s;
+  animation: bounce 0.4s;
 }
 
 .modal-error {
-  animation: shake 0.6s;
+  animation: shake 0.4s;
 }
 
 @keyframes bounce {
