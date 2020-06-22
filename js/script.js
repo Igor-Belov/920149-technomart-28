@@ -7,7 +7,7 @@ var message_buy = document.querySelector(".message-buy");
 var button_close_write_us = document.querySelector(".write-us .button-close");
 var button_close_popup_map = document.querySelector(".popup-map .button-close");
 var button_close_message_buy = document.querySelector(".message-buy .button-close");
-var type_page = document.querySelector(".page-body")
+var type_page = document.querySelector(".page-body");
 var fname = document.querySelector(".write-us li:first-child .input");
 var femail = document.querySelector(".write-us li:nth-child(2) .input");
 var fmessage = document.querySelector(".write-us li:nth-child(3) .input");
@@ -17,8 +17,6 @@ var form_buy_button2 = document.querySelector(".buttons-panel .link:nth-child(2)
 
 
 if (type_page.classList.contains("index-page")) {
-
-  // модальное окно "напишите нам"
 
   var isStorageSupport = true;
   var storage_name = "";
@@ -42,7 +40,6 @@ if (type_page.classList.contains("index-page")) {
     fname.removeAttribute("required");
     femail.removeAttribute("required");
     fmessage.removeAttribute("required");
-    console.log(fname)
     if (storage_name) {
       fname.value = storage_name;
       if (storage_email) {
@@ -77,18 +74,16 @@ if (type_page.classList.contains("index-page")) {
       popup_write_us.classList.remove("modal-error");
       form_write_us.offsetWidth = form_write_us.offsetWidth;
       popup_write_us.classList.add("modal-error");
-    };
+    }
     if (isStorageSupport) {
       if (fname.value) {
         localStorage.setItem("formname", fname.value);
-      };
+      }
       if (femail.value) {
         localStorage.setItem("formemail", femail.value);
-      };
+      }
     }
   });
-
-  // модальное окно с картой
 
   button_map.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -112,7 +107,6 @@ if (type_page.classList.contains("index-page")) {
     }
   });
 
-  //Первый слайдер
   var button_right = document.querySelector(".management-slider-promo .right-arrow-button");
   var button_left = document.querySelector(".management-slider-promo .left-arrow-button");
   var slide = document.querySelectorAll(".slide-promo");
@@ -142,9 +136,6 @@ if (type_page.classList.contains("index-page")) {
     } else { nslide = 0; slide_adress = slide.item(nslide); round_adress = round_button.item(nslide); }
     slide_adress.classList.add("slide-current");
     round_adress.classList.add("current");
-    console.log(slide_adress);
-    console.log(nslide);
-    console.log(round_adress);
   });
 
   button_left.addEventListener("click", function () {
@@ -157,8 +148,6 @@ if (type_page.classList.contains("index-page")) {
     } else { nslide = slide.length - 1; slide_adress = slide.item(nslide); round_adress = round_button.item(nslide); }
     slide_adress.classList.add("slide-current");
     round_adress.classList.add("current");
-    console.log(slide_adress);
-    console.log(nslide);
   });
 
   zone_round_button.addEventListener("click", function (evt) {
@@ -177,8 +166,6 @@ if (type_page.classList.contains("index-page")) {
     }
   });
 
-
-  // Второй слайдер.
   var buttons_slider = document.querySelectorAll(".buttons-slider-service .button-slider-service");
   var slides_slider = document.querySelectorAll(".slides-service .slide-service");
   var menegment_second_slider = document.querySelector(".buttons-slider-service");
@@ -192,13 +179,12 @@ if (type_page.classList.contains("index-page")) {
     });
 
   menegment_second_slider.classList.remove("buttons-slider-service-off");
-  active_slide.classList.add("slide-current")
-  active_button.classList.add("button-current")
+  active_slide.classList.add("slide-current");
+  active_button.classList.add("button-current");
 
   menegment_second_slider.addEventListener("click", function (evt) {
     var target_click_slide2 = evt.target;
     if (target_click_slide2.classList.contains("button-slider-service")) {
-      console.log("запуск");
       if (!target_click_slide2.classList.contains("button-current")) {
         active_slide.classList.remove("slide-current");
         active_button.classList.remove("button-current");
@@ -206,7 +192,7 @@ if (type_page.classList.contains("index-page")) {
         position = 0;
         for (var i = 0; !buttons_slider.item(i).classList.contains("button-current"); i++) {
           position = 1 + i;
-        };
+        }
         active_slide = slides_slider.item(position);
         active_slide.classList.add("slide-current");
         active_button = buttons_slider.item(position);
@@ -214,16 +200,15 @@ if (type_page.classList.contains("index-page")) {
     }
   });
 }
-//модальное окно в корзине.
 
 button_buy.addEventListener("click", function (evt) {
-  console.log("клик в бай");
   var target_click = evt.target;
   if (target_click.classList.contains("button-buy")) {
     evt.preventDefault();
     if (!message_buy.classList.contains("popup-on")) {
       message_buy.classList.add("popup-on");
       message_buy.classList.add("modal-show");
+
     }
     button_close_message_buy.focus();
   }
@@ -242,7 +227,7 @@ window.addEventListener("keydown", function (evt) {
 button_close_message_buy.addEventListener("click", function () {
   message_buy.classList.remove("modal-show");
   message_buy.classList.remove("popup-on");
-}); 
+});
 
 form_buy_button1.addEventListener("click", function (evt) {
   evt.preventDefault();

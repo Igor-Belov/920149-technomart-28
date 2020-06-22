@@ -215,8 +215,7 @@ fieldset {
   margin: 0;
   padding: 0;
   
-  cursor: text;
-  content: "";
+  pointer-events: none;
 } 
 
 .input-search:hover ~ .icon-search path {
@@ -420,7 +419,8 @@ fieldset {
   background-position: 0 0;
 }
 
-.entrace li:nth-child(1) .link:hover path, .entrace li:nth-child(1) .link:focus path {
+.entrace li:nth-child(1) .link:hover path,
+.entrace li:nth-child(1) .link:focus path {
   fill: var(--basic-grey, darkgray);
 }
 
@@ -1086,8 +1086,12 @@ flex-shrink: 0;
 }
 
 .management-slider-promo-round .button:focus {
-  outline: 3px solid black;
+  outline: 1px solid black;
   outline-offset: 2px;
+}
+
+.management-slider-promo-round .button:hover {
+  outline: none;
 }
 
 .management-slider-promo-round .button:active {
@@ -1583,7 +1587,8 @@ flex-shrink: 0;
   outline: none;
 }
 
-.button-slider-service:focus, .button-slider-service:hover {
+.button-slider-service:focus,
+.button-slider-service:hover {
   border: none;
   outline: none;
   background-color: var(--nav-shadow, darkblue);
@@ -2374,6 +2379,10 @@ flex-shrink: 0;
   margin-left: -15px;
 }
 
+.popup-map iframe {
+  border: none;
+}
+
 .popup-map::after {
   position: absolute;
   top: 0;
@@ -2495,7 +2504,6 @@ flex-shrink: 0;
   display: block;
   width: 220px;
   height: 38px;
-  vertical-align: top;
   margin-bottom: 13px;
   padding-right: 10px;
   padding-left: 10px;
@@ -2618,25 +2626,25 @@ flex-shrink: 0;
 }
 
 .modal-show {
-  display: block;
-  animation: bounce 0.4s;
+  animation: bounce 0.5s;
+  animation-timing-function: ease-out;
 }
 
 .modal-error {
-  animation: shake 0.4s;
+  animation: shake 0.5s;
 }
 
 @keyframes bounce {
   0% {
-    transform: translateY(-2000px);
+    transform: translateY(-750px);
   }
 
   70% {
-    transform: translateY(30px);
+    transform: translateY(50px);
   }
 
   90% {
-    transform: translateY(-50px);
+    transform: translateY(-10px);
   }
 
   100% {
