@@ -357,6 +357,7 @@ fieldset {
   font-size: 21px;
   line-height: 30px;
   font-family: var(--first-font, Arial, sans-serif);
+  vertical-align: middle;
   color: var(--basic-red, red);
   
   border: 3px solid var(--wight, white);
@@ -1976,7 +1977,7 @@ fieldset {
   bottom: 0px;
   left: 50%;
 
-  display: inline-block;
+  display: block;
   width: 30px;
   height: 18px;
   margin-left: -15px;
