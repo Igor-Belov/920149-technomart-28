@@ -1697,12 +1697,16 @@ img {
   position: relative;
   z-index: 1;
 
-  width: 313px;
+  width: 275px;
   font-weight: normal;
   font-size: 13px;
   line-height: 25px;
   font-family: var(--second-font, "Arial", sans-serif);
   color: var(--text-black, black);
+}
+
+.slide-warranty .text {
+  width: 353px;
 }
 
 .slide-credit .design-button {
@@ -1754,8 +1758,14 @@ img {
   color: var(--text-black, black);
 }
 
-.bottom-main .text:last-of-type {
+
+.about-me .text:last-of-type {
+  width: 390px;
   margin-bottom: 0;
+}
+
+.contact .text {
+  width: 180px;
 }
 
 .bottom-main .carrier {
