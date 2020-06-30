@@ -502,12 +502,12 @@ img {
   outline: none;
 }
 
-.output-name-user .log-out:hover path,
-.output-name-user .log-out:focus path {
+.log-out:hover path,
+.log-out:focus path {
   fill: var(--basic-grey, darkgray);
 }
 
-.output-name-user .log-out:active path {
+.log-out:active path {
   fill: var(--basic-greylight, gray);
 }
 
@@ -2317,12 +2317,12 @@ img {
   outline: none;
 }
 
-.sort .button-sort-icon:focus path,
-.sort .button-sort-icon:hover path {
+.button-sort-icon:focus path,
+.button-sort-icon:hover path {
   fill: var(--basic-grey, darkgray);
 }
 
-.sort .button-sort-active path {
+.button-sort-active path {
   fill: var(--basic-red, red);
 }
 
